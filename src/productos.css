@@ -68,6 +68,9 @@ h1 {
   background-color: #ffdada;
   width: 70%;
   height: 100%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-bottom: 20px;
   display: grid;
   grid-template-columns: repeat(3, 15vw);
 
@@ -77,6 +80,7 @@ h1 {
   column-gap: 8em;
   row-gap: 12em;
   padding-top: 5%;
+  padding-bottom: 5%; 
 }
 
 .p {
