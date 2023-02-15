@@ -1,4 +1,13 @@
-header {
+::-webkit-scrollbar {
+  display: none;
+}
+
+@font-face {
+  font-family: 'LovedByTheKing';
+  src: local('LovedByTheKing'),
+  url("LovedbytheKing-Regular.ttf") format("truetype");
+}
+nav {
   height: 2vw;
 }
 
@@ -10,28 +19,49 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vw;
+  height: auto;
 }
+
 
 .title {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
   width: 100vw;
   height: 30vh;
-  background: linear-gradient(#fb8d98 97%, #a73752 3%);
+  background: linear-gradient(180deg, #fb8d98 60%, #a73752);
+  /*background: linear-gradient(#fb8d98 97%, #a73752 3%);*/
   margin: 0;
   padding: 0;
 }
 
-#koala {
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.flags {
+display: flex;
+align-items: center;
+gap: 20px;
+justify-content: center;
+}
+
+.branch {
+display: flex;
+align-items: center;
 }
 
 h1 {
   color: #fff;
   font-size: 3em;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
+  text-shadow: 4px 4px 10px #a73752;
+  font-family: 'LovedByTheKing';
+  letter-spacing: 4px;
 }
 
 .container {
@@ -60,19 +90,83 @@ h1 {
   box-shadow: 8px 8px 10px rgb(128 128 128);
 }
 
-.image {
-  background-image: url(foto-prueba.jpg);
+.image1 {
+  background-image: url(candy1.jpg);
   background-size: cover;
   height: 14em;
   border-top-right-radius: 7%;
   border-top-left-radius: 7%;
 }
 
+.image2 {
+  background-image: url(candy4.jpg);
+  background-size: cover;
+  height: 14em;
+  border-top-right-radius: 7%;
+  border-top-left-radius: 7%;
+}
+
+.image3 {
+  background-image: url(chewchew.jpg);
+  background-size: cover;
+  height: 14em;
+  border-top-right-radius: 7%;
+  border-top-left-radius: 7%;
+}
+
+.image4 {
+  background-image: url(candy3.jpg);
+  background-size: cover;
+  height: 14em;
+  border-top-right-radius: 7%;
+  border-top-left-radius: 7%;
+}
+.image5 {
+  background-image: url(kitkat.jpg);
+  background-size: cover;
+  height: 14em;
+  border-top-right-radius: 7%;
+  border-top-left-radius: 7%;
+}
+
+.image6 {
+  background-image: url(choc3.jpg);
+  background-size: cover;
+  height: 14em;
+  border-top-right-radius: 7%;
+  border-top-left-radius: 7%;
+}
+
+.image7 {
+  background-image: url(candy2.jpg);
+  background-size: cover;
+  height: 14em;
+  border-top-right-radius: 7%;
+  border-top-left-radius: 7%;
+}
+
+.image8 {
+  background-image: url(pez.jpg);
+  background-size: cover;
+  height: 14em;
+  border-top-right-radius: 7%;
+  border-top-left-radius: 7%;
+}
+
+.image9 {
+  background-image: url(choc.jpg);
+  background-size: cover;
+  height: 14em;
+  border-top-right-radius: 7%;
+  border-top-left-radius: 7%;
+}
 .prices {
   display: flex;
   flex-direction: column;
   text-align: left;
   margin-left: 20px;
+  line-height : 1px;
+  font-family: 'LovedByTheKing';
 }
 
 h2 {
