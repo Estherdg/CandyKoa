@@ -3,10 +3,12 @@
 }
 
 @font-face {
-  font-family: 'LovedByTheKing';
-  src: local('LovedByTheKing'),
-  url("LovedbytheKing-Regular.ttf") format("truetype");
+  font-family: LovedByTheKing;
+  src:
+    local("LovedByTheKing"),
+    url("LovedbytheKing-Regular.ttf") format("truetype");
 }
+
 nav {
   height: 2vw;
 }
@@ -22,7 +24,6 @@ body {
   height: auto;
 }
 
-
 .title {
   display: flex;
   flex-direction: row;
@@ -30,11 +31,11 @@ body {
   width: 100vw;
   height: 30vh;
   background: linear-gradient(180deg, #fb8d98 60%, #a73752);
-  /*background: linear-gradient(#fb8d98 97%, #a73752 3%);*/
+
+  /* background: linear-gradient(#fb8d98 97%, #a73752 3%); */
   margin: 0;
   padding: 0;
 }
-
 
 .logo {
   display: flex;
@@ -43,15 +44,15 @@ body {
 }
 
 .flags {
-display: flex;
-align-items: center;
-gap: 20px;
-justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
 }
 
 .branch {
-display: flex;
-align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 h1 {
@@ -60,7 +61,7 @@ h1 {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   text-align: center;
   text-shadow: 4px 4px 10px #a73752;
-  font-family: 'LovedByTheKing';
+  font-family: LovedByTheKing;
   letter-spacing: 4px;
 }
 
@@ -80,7 +81,7 @@ h1 {
   column-gap: 8em;
   row-gap: 12em;
   padding-top: 5%;
-  padding-bottom: 5%; 
+  padding-bottom: 5%;
 }
 
 .p {
@@ -125,6 +126,7 @@ h1 {
   border-top-right-radius: 7%;
   border-top-left-radius: 7%;
 }
+
 .image5 {
   background-image: url(kitkat.jpg);
   background-size: cover;
@@ -164,13 +166,14 @@ h1 {
   border-top-right-radius: 7%;
   border-top-left-radius: 7%;
 }
+
 .prices {
   display: flex;
   flex-direction: column;
   text-align: left;
   margin-left: 20px;
-  line-height : 1px;
-  font-family: 'LovedByTheKing';
+  line-height: 1px;
+  font-family: LovedByTheKing;
 }
 
 h2 {
