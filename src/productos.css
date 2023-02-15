@@ -45,23 +45,24 @@ body {
 .flags {
 display: flex;
 align-items: center;
-gap: 20px;
+gap: 40px;
 justify-content: center;
 }
 
 .branch {
 display: flex;
-align-items: center;
+align-items: flex-end;
+clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
 }
 
 h1 {
   color: #fff;
-  font-size: 3em;
+  font-size: 4em;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   text-align: center;
   text-shadow: 4px 4px 10px #a73752;
   font-family: 'LovedByTheKing';
-  letter-spacing: 4px;
+  letter-spacing: 6px;
 }
 
 .container {
@@ -80,7 +81,7 @@ h1 {
   column-gap: 8em;
   row-gap: 12em;
   padding-top: 5%;
-  padding-bottom: 5%; 
+  padding-bottom: 5%;
 }
 
 .p {
