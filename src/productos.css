@@ -3,16 +3,18 @@
 }
 
 @font-face {
-  font-family: 'LovedByTheKing';
-  src: local('LovedByTheKing'),
-  url("LovedbytheKing-Regular.ttf") format("truetype");
+  font-family: LovedByTheKing;
+  src:
+    local("LovedByTheKing"),
+    url("LovedbytheKing-Regular.ttf") format("truetype");
 }
+
 nav {
   height: 2vw;
 }
 
 body {
-  background-color: #fff6fa;
+  background-color: #e5f1f5;
   margin: 0 auto;
   padding: 0 auto;
   display: flex;
@@ -22,19 +24,17 @@ body {
   height: auto;
 }
 
-
 .title {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 100vw;
   height: 30vh;
-  background: linear-gradient(180deg, #fb8d98 60%, #a73752);
-  /*background: linear-gradient(#fb8d98 97%, #a73752 3%);*/
+  background: linear-gradient(180deg, #f2b1ab 60%, #fb8c81);
+  /* background: linear-gradient(#fb8d98 97%, #a73752 3%); */
   margin: 0;
   padding: 0;
 }
-
 
 .logo {
   display: flex;
@@ -49,24 +49,29 @@ gap: 40px;
 justify-content: center;
 }
 
+#japanflag2 {
+  margin-right: 200px;
+}
 .branch {
 display: flex;
 align-items: flex-end;
-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+clip-path: polygon(48% 0, 68% 50%, 51% 100%, 0% 100%, 25% 50%, 0% 0%);
+
+filter: opacity(90%);
 }
 
 h1 {
   color: #fff;
   font-size: 4em;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  text-align: center;
   text-shadow: 4px 4px 10px #a73752;
   font-family: 'LovedByTheKing';
   letter-spacing: 6px;
+  margin-right:
 }
 
 .container {
-  background-color: #ffdada;
+  background-color: #edd8dd;
   width: 70%;
   height: 100%;
   border-bottom-left-radius: 20px;
@@ -86,7 +91,7 @@ h1 {
 
 .p {
   text-align: center;
-  background-color: #ffb2b2;
+  background-color: #f7e1c4;
   margin: 5%;
   display: flex;
   flex-direction: column;
@@ -126,6 +131,7 @@ h1 {
   border-top-right-radius: 7%;
   border-top-left-radius: 7%;
 }
+
 .image5 {
   background-image: url(kitkat.jpg);
   background-size: cover;
@@ -165,13 +171,19 @@ h1 {
   border-top-right-radius: 7%;
   border-top-left-radius: 7%;
 }
+
 .prices {
   display: flex;
   flex-direction: column;
   text-align: left;
   margin-left: 20px;
-  line-height : 1px;
-  font-family: 'LovedByTheKing';
+  line-height: 1px;
+  font-family: LovedByTheKing;
+}
+
+.button {
+  background-color: #fb8d98;
+
 }
 
 h2 {
