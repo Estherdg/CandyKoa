@@ -1,16 +1,261 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
 body {
-  margin: 0;
+  margin: 0%;
   background-color: #fff6fa;
 }
 
 header {
   background-color: #ffdada;
-  width: auto;
-  height: 100px;
+  width: 100vw;
+  height: 6vw;
+  font-family: "Loved by the King", cursive;
 }
 
-/* footer {
+.header {
+  width: 100vw;
+  height: 6vw;
+  display: flex;
+  align-items: center;
+  margin-inline: 2vw;
+}
+
+/* Menu */
+.desplegable button {
   background-color: #ffdada;
-  width: auto;
-  height: 100px;
-} */
+  color: #fb8d98;
+  border: none;
+  font-size: 1.8dvw;
+  margin: 2vw;
+  font-family: "Loved by the King", cursive;
+}
+
+/* Info web */
+.info a {
+  text-decoration: none;
+  color: #fb8d98;
+  font-size: 1.8dvw;
+}
+
+/* Logo y frase */
+.logo-text {
+  width: 100vw;
+  height: 10vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 60vw;
+  height: 12vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.logo img {
+  width: 12vw;
+  height: 12.5vw;
+}
+
+.text {
+  width: 45vw;
+  height: 10vw;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.text h1 {
+  color: #a73752;
+  font-family: "Loved by the King", cursive;
+  font-size: 2dvw;
+  padding-right: 6vw;
+  text-align: center;
+}
+
+/* Carrousel de fotos */
+.carroussel {
+  width: 100vw;
+  height: 20vw;
+  background-image: url("assets/productos/chuches.jpg");
+  background-size: cover;
+}
+
+/* Dulces por país */
+.candy-cartel {
+  background-color: transparent;
+  width: 100vw;
+  height: 7vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.candytext {
+  background-color: #a73752;
+  width: 20vw;
+  height: 1vw;
+  display: flex;
+  justify-content: center;
+  border-radius: 6px;
+  position: absolute;
+  z-index: -1;
+}
+
+.text2 {
+  background-color: #fb8d98;
+  width: 15vw;
+  height: 3vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+}
+
+.text2 p {
+  color: #ffdada;
+  font-family: "Loved by the King", cursive;
+  font-size: 1.5dvw;
+}
+
+/* Imágenes de los países */
+.international-candy {
+  width: 100vw;
+  height: 15vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pais img {
+  width: 20vw;
+  height: 12vw;
+  margin-inline: 2vw;
+}
+
+/* Top ventas-Cartel con koala */
+.bloc-decoration {
+  width: 100vw;
+  height: 8.9vw;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+}
+
+.logo-ventas {
+  width: 10vw;
+  height: 9vw;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.ventas-cartel {
+  width: 100vw;
+  height: 3.6vw;
+  background-color: #fb8d98;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.topventas {
+  width: 25vw;
+  height: 3.5vw;
+  background-color: #ffdada;
+  border-radius: 10px;
+  transform: translateY(20%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.topventas p {
+  color: #fb8d98;
+  font-size: 2dvw;
+  font-family: "Loved by the King", cursive;
+  text-align: center;
+}
+
+/* Top ventas-Tarjetas de productos */
+.productos {
+  width: 100vw;
+  height: 18vw;
+  margin: 2vw;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.tarjeta {
+  background-color: #a73752;
+  width: 10vw;
+  height: 18vw;
+  border-radius: 6px;
+  font-family: "Loved by the King", cursive;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tarjeta a {
+  color: #ffdada;
+  font-size: 1.5dvw;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+
+.foto img {
+  width: 8vw;
+  height: 9vw;
+  border-radius: 1vw;
+  margin: 0 1vw;
+}
+
+.precio {
+  font-size: 1.5dvw;
+  color: #ffdada;
+  margin-left: 1vw;
+}
+
+footer {
+  background-color: #ffdada;
+  width: 100vw;
+  height: 6vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Footer-Logo */
+.logo-name {
+  width: 65vw;
+  height: 6vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.logo-name img {
+  width: 10vw;
+  height: 3vw;
+}
+
+/* Footer-Redes sociales */
+.social-networks {
+  width: 50vw;
+  height: 3vw;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social-networks img {
+  width: 2vw;
+  height: 2vw;
+  margin: 0.5vw;
+}

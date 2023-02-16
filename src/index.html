@@ -1,35 +1,105 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CandyKoa </title>
-  <link rel="stylesheet" href="./index.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Loved+by+the+King&family=Roboto+Mono:wght@300&family=Source+Code+Pro:ital,wght@1,300&display=swap"
+    rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Loved+by+the+King&family=Roboto+Mono:wght@300&family=Source+Code+Pro:ital,wght@1,300&display=swap');
+
+  </style>
+  <title>CandyKoa</title>
+  <link rel="stylesheet" href="./index.css" />
   <script type="module" src="./index.js"></script>
 </head>
 <header>
   <div class="header">
-    <nav>
-      <label for="productos">Productos</label>
-      <select name="Productos" id="product">
-        <option value="japon">Japón</option>
-        <option value="eeuu">Estados Unidos</option>
-        <option value="americaLatina">América Latina</option>
-        <option value="ue">Europa</option>
-      </select>
-      <a href="http://" rel="noopener noreferrer">¿Quiénes somos?</a>
-    </nav>
+    <!--Menu-->
+    <div class="desplegable">
+      <button>Productos</button>
+      <!--<div class="links">
+        <a href="http://">Japón</a>
+      </div>-->
+    </div>
+    <!--Info-web-->
+    <div class="info"><a href="/src/info.html" rel="noopener noreferrer">¿Quiénes somos?</a></div>
   </div>
 </header>
-<body>
-<div class="logo-frase">
 
-</div>
-<div class="carroussel"></div>
-<div class="international-candy"></div>
-<div class="trending"></div>
+<body> <!--Logo y frase-->
+  <div class="logo-text">
+    <div class="logo"><img src="assets/logo-nombre/logo-med-bn.png" alt=""></div>
+    <div class="text"><h1>Los dulces del mundo <br> a tu alcance</h1></div>
+  </div>
+  <!--Carroussel-->
+  <div class="carroussel"></div>
+  <!--Dulces por país-->
+  <div class="candy-cartel">
+    <div class="candytext"></div>
+      <div class="text2">
+        <p>Dulces Internacionales</p>
+      </div>
+  </div>
+  <div class="international-candy">
+    <div class="pais">
+      <a class="japon" href="https://www.google.com" target="_blank">
+        <img src="assets/paises/japanese.PNG" /></a>
+      <a class="eeuu" href="https://www.google.com">
+        <img src="assets/paises/eeuu.PNG" /></a>
+      <a class="mexico" href="https://www.google.com">
+        <img src="assets/paises/mexican.PNG" /></a>
+    </div>
+  </div>
+  <!--Top ventas-->
+  <div class="trending">
+    <div class="bloc-decoration">
+      <img class="logo-ventas" src="assets/logo-nombre/logo.png" alt="">
+      <div class="ventas-cartel">
+        <div class="topventas">
+          <p>TOP VENTAS</p>
+        </div>
+      </div>
+    </div>
+    <!--Tarjetas de productos-->
+    <div class="productos">
+      <div class="tarjeta">
+        <h2><a href="">Hi-Chew</a></h2>
+        <div class="foto"><img src="assets/productos/erik-mclean-C7enepVlKEE-unsplash.jpg" alt=""></div>
+        <h3 class="precio">3,50€</h3>
+      </div>
+      <div class="tarjeta">
+        <h2><a href="">Matcha Hearts</a></h2>
+        <div class="foto"><img src="assets/productos/maja-vujic-1tyorLE6J3A-unsplash.jpg" alt=""></div>
+        <h3 class="precio">3,50€</h3>
+      </div>
+      <div class="tarjeta">
+        <h2><a href="">Blue Dreams</a></h2>
+        <div class="foto"><img src="assets/productos/mesha-mittanasala-_Y94hdK73tk-unsplash.jpg" alt=""></div>
+        <h3 class="precio">1,50€</h3>
+      </div>
+      <div class="tarjeta">
+        <h2><a href="">Zenhou Colors</a></h2>
+        <div class="foto"><img src="assets/productos/weiqi-xiong-dLbBmixJ5WI-unsplash.jpg" alt=""></div>
+        <h3 class="precio">1,50€</h3>
+      </div>
+    </div>
+  </div>
 </body>
-<footer>
+<footer> <!--Footer con logo y redes-->
+  <div class="logo-name"> <img src="assets/logo-nombre/nombre-logo.png" alt="logo-name">
+  </div>
+  <div class="social-networks">
+    <a href="https://www.instagram.com/candykoaofficial/ " target="_blank"> <img src="assets/iconos/instagram.png"></a>
+    <a href=" "> <img src="assets/iconos/facebook.png" target="_blank"></a>
+    <a href="mailto:candykoaofficial@gmail.com" target="_blank"> <img src="assets/iconos/correo.png"></a>
+    <a href="https://twitter.com/KoaCandy " target="_blank"> <img src="assets/iconos/twitter.png"></a>
+  </div>
 </footer>
+
 </html>
