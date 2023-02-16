@@ -14,7 +14,7 @@ nav {
 }
 
 body {
-  background-color: #fff6fa;
+  background-color: #e5f1f5;
   margin: 0 auto;
   padding: 0 auto;
   display: flex;
@@ -30,8 +30,7 @@ body {
   justify-content: space-between;
   width: 100vw;
   height: 30vh;
-  background: linear-gradient(180deg, #fb8d98 60%, #a73752);
-
+  background: linear-gradient(180deg, #f2b1ab 60%, #fb8c81);
   /* background: linear-gradient(#fb8d98 97%, #a73752 3%); */
   margin: 0;
   padding: 0;
@@ -44,29 +43,34 @@ body {
 }
 
 .flags {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  justify-content: center;
+display: flex;
+align-items: center;
+gap: 40px;
+justify-content: center;
 }
 
+#japanflag2 {
+  margin-right: 200px;
+}
 .branch {
-  display: flex;
-  align-items: center;
+display: flex;
+align-items: flex-end;
+clip-path: polygon(48% 0, 68% 50%, 51% 100%, 0% 100%, 25% 50%, 0% 0%);
+
+filter: opacity(90%);
 }
 
 h1 {
   color: #fff;
   font-size: 3em;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  text-align: center;
   text-shadow: 4px 4px 10px #a73752;
-  font-family: LovedByTheKing;
-  letter-spacing: 4px;
+  font-family: 'LovedByTheKing';
+  letter-spacing: 6px;
+  margin-right:
 }
 
 .container {
-  background-color: #ffdada;
+  background-color: #edd8dd;
   width: 70%;
   height: 100%;
   border-bottom-left-radius: 20px;
@@ -74,6 +78,7 @@ h1 {
   margin-bottom: 20px;
   display: grid;
   grid-template-columns: repeat(3, 15vw);
+  box-shadow: 1px 1px 10px #b7a9ac;
 
   /* grid-template-rows: repeat(3, 20vh); */
   justify-content: center;
@@ -86,13 +91,18 @@ h1 {
 
 .p {
   text-align: center;
-  background-color: #ffb2b2;
+  background-color: #f7e1c4;
   margin: 5%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   border-radius: 7%;
-  box-shadow: 8px 8px 10px rgb(128 128 128);
+  box-shadow: 8px 8px 10px #a7a09f;
+  transition: transform .2s;
+}
+
+.p:hover {
+  transform: scale(1.2)
 }
 
 .image1 {
