@@ -62,12 +62,10 @@ filter: opacity(90%);
 
 h1 {
   color: #fff;
-  font-size: 4em;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 3em;
   text-shadow: 4px 4px 10px #a73752;
   font-family: 'LovedByTheKing';
   letter-spacing: 6px;
-  margin-right:
 }
 
 .container {
@@ -79,6 +77,7 @@ h1 {
   margin-bottom: 20px;
   display: grid;
   grid-template-columns: repeat(3, 15vw);
+  box-shadow: 1px 1px 10px #b7a9ac;
 
   /* grid-template-rows: repeat(3, 20vh); */
   justify-content: center;
@@ -97,7 +96,12 @@ h1 {
   flex-direction: column;
   justify-content: center;
   border-radius: 7%;
-  box-shadow: 8px 8px 10px rgb(128 128 128);
+  box-shadow: 8px 8px 10px #a7a09f;
+  transition: transform .2s;
+}
+
+.p:hover {
+  transform: scale(1.2)
 }
 
 .image1 {
@@ -140,6 +144,7 @@ h1 {
   border-top-left-radius: 7%;
 }
 
+
 .image6 {
   background-image: url(choc3.jpg);
   background-size: cover;
@@ -147,6 +152,7 @@ h1 {
   border-top-right-radius: 7%;
   border-top-left-radius: 7%;
 }
+
 
 .image7 {
   background-image: url(candy2.jpg);
@@ -156,6 +162,7 @@ h1 {
   border-top-left-radius: 7%;
 }
 
+
 .image8 {
   background-image: url(pez.jpg);
   background-size: cover;
@@ -164,6 +171,7 @@ h1 {
   border-top-left-radius: 7%;
 }
 
+
 .image9 {
   background-image: url(choc.jpg);
   background-size: cover;
@@ -171,6 +179,7 @@ h1 {
   border-top-right-radius: 7%;
   border-top-left-radius: 7%;
 }
+
 
 .prices {
   display: flex;
@@ -181,10 +190,6 @@ h1 {
   font-family: LovedByTheKing;
 }
 
-.button {
-  background-color: #fb8d98;
-
-}
 
 h2 {
   margin-top: 1em;
