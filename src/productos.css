@@ -20,6 +20,41 @@ nav {
   height: 2vw;
 }
 
+.migasdepan {
+  list-style: none;
+}
+
+ul.migasdepan {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: #e5f1f5;
+}
+
+ul.migasdepan li {
+  display: inline;
+  font-size: 18px;
+}
+
+ul.migasdepan li + li::before {
+  padding: 8px;
+  color: #a73752;
+  content: "/";
+}
+
+ul.migasdepan li a {
+  color: #a73752;
+  text-decoration: none;
+}
+
+ul.migasdepan li a:hover {
+  color: #fb8d98;
+  text-decoration: underline;
+}
+
+.lastline {
+  color: #fb8d98;
+}
+
 body {
   background-color: #e5f1f5;
   margin: 0 auto;
@@ -195,7 +230,7 @@ h1 {
   margin-left: 20px;
   line-height: 1px;
   font-family: ShantellSans;
-  font-size: 0.8em; 
+  font-size: 0.8em;
 }
 
 
