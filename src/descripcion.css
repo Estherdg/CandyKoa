@@ -1,3 +1,17 @@
+@font-face {
+  font-family: ShantellSans;
+  src:
+    local("ShantellSans"),
+    url("ShantellSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: IndieFlower;
+  src:
+    local("IndieFlower"),
+    url("IndieFlower-Regular.ttf") format("truetype");
+}
+
 body {
   background-color: #edd8dd;
   margin: 0;
@@ -8,7 +22,6 @@ body {
 
 .migasdepan {
   list-style: none;
-  width: 50%;
 }
 
 ul.migasdepan {
@@ -48,7 +61,7 @@ ul.migasdepan li a:hover {
   margin: 0 0 10em 10em;
   padding: 0;
   flex-direction: column;
-  width: 100%;
+  width: 100vw;
   row-gap: 2em;
 }
 
@@ -64,10 +77,12 @@ ul.migasdepan li a:hover {
 }
 
 h1 {
-  margin: 0;
+  margin: 20px;
   padding: 0;
-  font-size: 3em;
+  font-size: 2em;
   color: #a73752;
+  font-family: IndieFlower;
+
 }
 
 .product {
@@ -77,8 +92,9 @@ h1 {
   margin-top: 2.8em;
   gap: 4em;
   background-color: #f2b1ab;
-  width: 60%;
+  width: 60vw;
   border-radius: 20px;
+  font-family: ShantellSans;
 }
 
 .top-container {
@@ -95,7 +111,7 @@ h1 {
   padding: 0;
   column-gap: 10%;
   row-gap: 20%;
-  font-size: 21px;
+  font-size: 16px;
   color: #a73752;
 }
 
@@ -131,6 +147,7 @@ header {
   border-style: solid;
   border-color: #a73752;
   border-width: thin;
+  font-family: ShantellSans;
 }
 
 .cart-container {
@@ -179,9 +196,10 @@ header {
   padding: 0;
   width: 55%;
   text-align: justify;
-  font-size: 25px;
+  font-size: 20px;
   color: #a73752;
   margin-left: 50px;
+  font-family: ShantellSans;
 }
 
 .ingredients {
@@ -189,23 +207,25 @@ header {
   flex-direction: row;
   gap: 20px;
   color: #a73752;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 40px;
   background-color: #eefaef;
   padding: 20px;
   width: 40%;
   margin-left: 160px;
   border-radius: 20px;
+  font-family: ShantellSans;
 }
 
 .oneliner {
-  font-size: 25px;
+  font-size: 20px;
 }
 
 h4 {
-  font-size: 30px;
+  font-size: 20px;
   padding: 50px;
   color: #fb8c81;
+  font-family: IndieFlower;
 }
 
 .info > ul {

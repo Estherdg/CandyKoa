@@ -1,8 +1,23 @@
+@font-face {
+  font-family: ShantellSans;
+  src:
+    local("ShantellSans"),
+    url("ShantellSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: IndieFlower;
+  src:
+    local("IndieFlower"),
+    url("IndieFlower-Regular.ttf") format("truetype");
+}
+
 body {
   background: linear-gradient(175deg, #e5f1f5 20px, #f7e1c4);
   background-repeat: no-repeat;
   width: auto;
   height: 100vh;
+  font-family: ShantellSans;
 }
 
 .logo {

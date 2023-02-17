@@ -3,10 +3,17 @@
 }
 
 @font-face {
-  font-family: LovedByTheKing;
+  font-family: ShantellSans;
   src:
-    local("LovedByTheKing"),
-    url("LovedbytheKing-Regular.ttf") format("truetype");
+    local("ShantellSans"),
+    url("ShantellSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: IndieFlower;
+  src:
+    local("IndieFlower"),
+    url("IndieFlower-Regular.ttf") format("truetype");
 }
 
 nav {
@@ -45,8 +52,9 @@ body {
 .flags {
 display: flex;
 align-items: center;
-gap: 40px;
 justify-content: center;
+gap: 10px;
+
 }
 
 #japanflag2 {
@@ -56,7 +64,6 @@ justify-content: center;
 display: flex;
 align-items: flex-end;
 clip-path: polygon(48% 0, 68% 50%, 51% 100%, 0% 100%, 25% 50%, 0% 0%);
-
 filter: opacity(90%);
 }
 
@@ -64,7 +71,7 @@ h1 {
   color: #fff;
   font-size: 3em;
   text-shadow: 4px 4px 10px #a73752;
-  font-family: LovedByTheKing;
+  font-family: IndieFlower;
   letter-spacing: 4px;
 }
 
@@ -187,7 +194,8 @@ h1 {
   text-align: left;
   margin-left: 20px;
   line-height: 1px;
-  font-family: LovedByTheKing;
+  font-family: ShantellSans;
+  font-size: 0.8em; 
 }
 
 
