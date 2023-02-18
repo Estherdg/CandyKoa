@@ -1,0 +1,106 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
+@font-face {
+  font-family: ShantellSans;
+  src:
+    local("ShantellSans"),
+    url("ShantellSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: IndieFlower;
+  src:
+    local("IndieFlower"),
+    url("IndieFlower-Regular.ttf") format("truetype");
+}
+
+body {
+  margin: 0%;
+  background-color: #fff6fa;
+}
+
+header {
+  background-color: #ffdada;
+  width: 100vw;
+  height: 6vw;
+  font-family: "Indie Flower", cursive;
+}
+
+.header {
+  width: 100vw;
+  height: 6vw;
+  display: flex;
+  align-items: center;
+  margin-inline: 2vw;
+}
+
+/* Menu */
+.desplegable button {
+  background-color: #ffdada;
+  color: #fb8d98;
+  border: none;
+  font-size: 1.8dvw;
+  margin: 2vw;
+  font-family: "Indie Flower", cursive;
+}
+
+/* Info web */
+.info a {
+  text-decoration: none;
+  color: #fb8d98;
+  font-size: 1.8dvw;
+}
+
+/* Carrito compra */
+.carrito {
+  width: 70vw;
+  height: 3vw;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.carrito img {
+  width: 2vw;
+  height: 2vw;
+  margin: 0.5vw;
+}
+
+/* Footer-Logo y Redes */
+footer {
+  background-color: #ffdada;
+  width: 100vw;
+  height: 6vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Footer-Logo */
+.logo-name {
+  width: 65vw;
+  height: 6vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.logo-name img {
+  width: 10vw;
+  height: 3vw;
+}
+
+/* Footer-Redes sociales */
+.social-networks {
+  width: 50vw;
+  height: 3vw;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social-networks img {
+  width: 2vw;
+  height: 2vw;
+  margin: 1vw;
+}
