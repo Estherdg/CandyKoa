@@ -18,16 +18,17 @@
 
 nav {
   height: 2vw;
+  background-color: pink;
 }
 
 .migasdepan {
   list-style: none;
+  margin: 0;
 }
 
 ul.migasdepan {
   padding: 10px 16px;
   list-style: none;
-  background-color: #e5f1f5;
 }
 
 ul.migasdepan li {
@@ -57,6 +58,8 @@ ul.migasdepan li a:hover {
 
 body {
   background-color: #e5f1f5;
+  /*background: linear-gradient(#e0ddde65, #e0ddde6c), url("../public/chuches.jpeg");
+  background-size: cover;*/
   margin: 0 auto;
   padding: 0 auto;
   display: flex;
@@ -111,11 +114,12 @@ h1 {
 }
 
 .container {
-  background-color: #edd8dd;
+  background-color:#edd8dd;
   width: 70%;
   height: 100%;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  /*border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;*/
+border-radius: 20px;
   margin-bottom: 20px;
   display: grid;
   grid-template-columns: repeat(3, 15vw);
@@ -124,10 +128,10 @@ h1 {
   /* grid-template-rows: repeat(3, 20vh); */
   justify-content: center;
   align-items: center;
-  column-gap: 8em;
-  row-gap: 12em;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  column-gap: 6em;
+  row-gap: 6em;
+  padding-top: 4%;
+  padding-bottom: 4%;
 }
 
 .p {
@@ -227,23 +231,31 @@ h1 {
 .prices {
   display: flex;
   flex-direction: row;
-  text-align: left;
   font-family: ShantellSans;
+  text-align: left;
   font-size: 0.7em;
-  justify-content: space-around;
-  gap: 40px;
+  justify-content: space-between;
 }
 
 
-.text {
+.texts {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  margin-left: 20px;
+  line-height: 10px;
 
 }
 
+.carrito {
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 15px;
+}
+
 .iconcarrito {
-align-self: center;
+  align-self: center;
 }
 
 h2 {
