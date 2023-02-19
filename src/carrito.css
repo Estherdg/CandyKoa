@@ -25,7 +25,7 @@ header {
   background-color: #ffdada;
   width: 100vw;
   height: 6vw;
-  font-family: "Indie Flower", cursive;
+  font-family: "Indie Flower";
 }
 
 .header {
@@ -43,7 +43,7 @@ header {
   border: none;
   font-size: 1.8dvw;
   margin: 2vw;
-  font-family: "Indie Flower", cursive;
+  font-family: "Indie Flower";
 }
 
 /* Info web */
@@ -68,12 +68,6 @@ header {
 }
 
 /* Info-compra */
-.info-carrito {
-  width: 100vw;
-  height: 40vw;
-  display: flex;
-}
-
 .info-producto {
   background-color: #fff;
   width: 55vw;
@@ -92,8 +86,8 @@ header {
 .text-product {
   width: 30vw;
   height: auto;
-  font-family: "Indie Flower", cursive;
-  font-size: 1.5dvw;
+  font-family: "Indie Flower";
+  font-size: 1.5vw;
   margin-left: 1vw;
 }
 
@@ -145,8 +139,4 @@ footer {
   width: 2vw;
   height: 2vw;
   margin: 1vw;
-}
-
-.info-carrito{
-
 }
