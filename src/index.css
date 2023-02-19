@@ -41,7 +41,7 @@ header {
   background-color: #ffdada;
   color: #fb8d98;
   border: none;
-  font-size: 1.8dvw;
+  font-size: 1.8vw;
   margin: 0 2vw;
   font-family: "Indie Flower", cursive;
 }
@@ -50,7 +50,7 @@ header {
 .info a {
   text-decoration: none;
   color: #fb8d98;
-  font-size: 1.8dvw;
+  font-size: 1.8vw;
 }
 
 /* Carrito compra */
