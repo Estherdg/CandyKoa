@@ -140,6 +140,7 @@ h1 {
   border-radius: 7%;
   box-shadow: 8px 8px 10px #a7a09f;
   transition: transform .2s;
+  white-space:nowrap;
 }
 
 .p:hover {
@@ -225,25 +226,32 @@ h1 {
 
 .prices {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   text-align: left;
-  margin-left: 20px;
-  line-height: 1px;
   font-family: ShantellSans;
-  font-size: 0.8em;
+  font-size: 0.7em;
+  justify-content: space-around;
+  gap: 40px;
 }
 
 
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+}
+
+.iconcarrito {
+align-self: center;
+}
+
 h2 {
-  margin-top: 1em;
-  padding: 0;
-  margin-bottom: 0 auto;
+
 }
 
 h3 {
-  padding: 0;
   color: #ff8692;
-  margin-top: 0 auto;
 }
 
 .link {
