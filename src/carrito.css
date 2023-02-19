@@ -41,7 +41,7 @@ header {
   background-color: #ffdada;
   color: #fb8d98;
   border: none;
-  font-size: 1.8dvw;
+  font-size: 1.8vw;
   margin: 2vw;
   font-family: "Indie Flower";
 }
@@ -62,43 +62,57 @@ header {
 }
 
 .carrito img {
-  width: 2vw;
-  height: 2vw;
+  width: 80%;
+  height: 100%;
   margin: 0.5vw;
 }
 
 /* Info-compra */
-.info-producto {
-  background-color: #fff;
-  width: 55vw;
-  height: 18vw;
-  margin: 3vw 0 0 5vw;
+.container {
+  height: 100vw;
+  width: 100%;
+  padding: 0;
+  margin: 0;
   display: flex;
-  align-items: center;
+  gap: 25em;
+  margin-top: 3vw;
 }
 
-.chuche img {
-  width: 20vw;
-  height: auto;
+.info-producto {
+  background-color: #fff;
+  width: 85%;
+  height: 11em;
+  display: flex;
+  align-items: center;
+  align-self: center;
+  margin-top: 1em;
+  border-radius: 2%;
+}
+
+.chuche {
+  background-image: url("assets/productos/erik-mclean-C7enepVlKEE-unsplash.jpg");
+  background-size: cover;
+  width: 20%;
+  height: 60%;
   margin-left: 2vw;
 }
 
 .text-product {
-  width: 30vw;
+  width: 30%;
   height: auto;
   font-family: "Indie Flower";
-  font-size: 1.5vw;
-  margin-left: 1vw;
+  font-size: 1.5em;
+  margin-left: 1em;
 }
 
 .logo-carro {
-  width: 35vw;
-  height: 20vw;
-  display: flex;
-  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
 }
 
 .logo-carro img {
+  margin: 0;
+  padding: 0;
   width: 15vw;
   height: 15vw;
 }
@@ -139,4 +153,37 @@ footer {
   width: 2vw;
   height: 2vw;
   margin: 1vw;
+}
+
+/* pago */
+
+.pago {
+  margin: 0;
+  padding: 0;
+  height: 25em;
+  background-color: white;
+  border-radius: 5%;
+  margin-top: 5vw;
+}
+
+.pago :nth-child(1n) {
+  margin: 0;
+}
+
+.pago-logo {
+  margin: 0;
+  padding: 0;
+  justify-content: right;
+  width: 18em;
+}
+
+/* lista de la compra */
+
+.shoplist {
+  background-color: #fb8d98;
+  display: flex;
+  flex-direction: column;
+  width: 55vw;
+  margin-left: 5em;
+  border-radius: 1%;
 }
