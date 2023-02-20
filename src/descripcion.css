@@ -34,7 +34,7 @@ body {
 }
 
 ul.migasdepan {
-  padding: 10px 16px;
+  padding: 5px 16px;
   list-style: none;
   background-color: #edd8dd;
 }
@@ -68,11 +68,10 @@ ul.migasdepan li a:hover {
 .container {
   display: flex;
   align-items: left;
-  margin: 0 0 10em 10em;
+  /*margin: 0 0 10em 10em;*/
   padding: 0;
   flex-direction: column;
   width: 100vw;
-  row-gap: 2em;
 }
 
 
@@ -81,17 +80,15 @@ ul.migasdepan li a:hover {
   display: flex;
   margin: 0;
   padding: 0;
-  gap: 5em;
+  gap: 6em;
 }
 
 /*Hijo de top-container, con foto, título y etiquetas*/
 .product {
-  padding: 20px;
   display: flex;
   flex-direction: row;
-  margin-top: 2.8em;
-  gap: 4em;
-  background-color: #f2b1ab;
+  margin-top: 1.5em;
+  /*background-color: #f2b1ab;*/
   width: 60vw;
   border-radius: 20px;
   font-family: ShantellSans;
@@ -103,24 +100,29 @@ ul.migasdepan li a:hover {
   display: flex;
   justify-content: center;
   width: 20vw;
-  height: 30vh;
-  margin: 10px;
+  height: 25vh;
   /*background-size: cover;*/
 }
 
 /*Características y modificación de la foto*/
 #photodetails {
 border-radius: 20px;
-width: 300px;
+width: 200px;
 margin: 0;
 box-shadow: 2px 2px 10px rgb(206 201 201);
+border: 6px solid #fb8c81;
+overflow: hidden;
+transition: transform .2s;
+}
+
+#photodetails:hover {
+transform: scale(1.2);
 }
 
 /*Título producto*/
 h1 {
-  margin: 20px;
   padding: 0;
-  font-size: 2em;
+  font-size: 1.5em;
   color: #a73752;
   font-family: IndieFlower;
 
@@ -128,8 +130,13 @@ h1 {
 
 /*Nombre + precio + etiquetas del producto*/
 .product-card {
-  margin: 0;
   padding: 0;
+  margin: 0;
+}
+
+/*Precio y unidades*/
+.oneliner {
+  font-size: 0.9em;
 }
 
 /*Etiquetas alérgenos*/
@@ -140,7 +147,7 @@ h1 {
   padding: 0;
   column-gap: 10%;
   row-gap: 20%;
-  font-size: 16px;
+  font-size: 0.8em;
   color: #a73752;
 }
 
@@ -213,12 +220,19 @@ h1 {
 
 
 /*Sección descripción larga producto*/
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/*Descripción*/
 .text {
   margin-top: 0;
   padding: 0;
   width: 55%;
   text-align: justify;
-  font-size: 20px;
+  font-size: 1.1em;
   color: #a73752;
   margin-left: 50px;
   font-family: ShantellSans;
@@ -230,22 +244,20 @@ h1 {
   flex-direction: row;
   gap: 20px;
   color: #a73752;
-  font-size: 18px;
+  font-size: 1em;
   line-height: 40px;
   background-color: #eefaef;
-  padding: 20px;
+  padding: 10px;
   width: 40%;
   margin-left: 160px;
   border-radius: 20px;
   font-family: ShantellSans;
+  box-shadow: 0.5px 0.5px 5px grey;
 }
 
-.oneliner {
-  font-size: 20px;
-}
 
 h4 {
-  font-size: 25px;
+  font-size: 1.2em;
   padding: 50px;
   color: #fb8c81;
   font-family: IndieFlower;
