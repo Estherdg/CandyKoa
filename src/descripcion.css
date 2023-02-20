@@ -1,3 +1,4 @@
+/*Fuentes de texto*/
 @font-face {
   font-family: ShantellSans;
   src:
@@ -12,6 +13,13 @@
     url("IndieFlower-Regular.ttf") format("truetype");
 }
 
+/*Menú*/
+header {
+  height: 4em;
+  background-color: pink;
+}
+
+/*Características generales del body*/
 body {
   background-color: #edd8dd;
   margin: 0;
@@ -20,6 +28,7 @@ body {
   align-items: center;
 }
 
+/*Migas de pan*/
 .migasdepan {
   list-style: none;
 }
@@ -55,6 +64,7 @@ ul.migasdepan li a:hover {
   color: #fb8d98;
 }
 
+/*Container descripción de productos+sección de envios y carrito*/
 .container {
   display: flex;
   align-items: left;
@@ -65,26 +75,16 @@ ul.migasdepan li a:hover {
   row-gap: 2em;
 }
 
-.foto {
-  background-image: url("candy1.jpg");
-  width: 20vw;
-  height: 30vh;
-  background-size: cover;
-  margin: 10px;
+
+/*Contenedor con foto+nombre+etiquetas*/
+.top-container {
+  display: flex;
+  margin: 0;
   padding: 0;
-  border-radius: 20px;
-  box-shadow: 2px 2px 10px rgb(206 201 201);
+  gap: 5em;
 }
 
-h1 {
-  margin: 20px;
-  padding: 0;
-  font-size: 2em;
-  color: #a73752;
-  font-family: IndieFlower;
-
-}
-
+/*Hijo de top-container, con foto, título y etiquetas*/
 .product {
   padding: 20px;
   display: flex;
@@ -97,13 +97,42 @@ h1 {
   font-family: ShantellSans;
 }
 
-.top-container {
+/*Espacio para  colocar la foto*/
+.photo {
+  /*background-image: url("candy1.jpg");*/
   display: flex;
-  margin: 0;
-  padding: 0;
-  gap: 5em;
+  justify-content: center;
+  width: 20vw;
+  height: 30vh;
+  margin: 10px;
+  /*background-size: cover;*/
 }
 
+/*Características y modificación de la foto*/
+#photodetails {
+border-radius: 20px;
+width: 300px;
+margin: 0;
+box-shadow: 2px 2px 10px rgb(206 201 201);
+}
+
+/*Título producto*/
+h1 {
+  margin: 20px;
+  padding: 0;
+  font-size: 2em;
+  color: #a73752;
+  font-family: IndieFlower;
+
+}
+
+/*Nombre + precio + etiquetas del producto*/
+.product-card {
+  margin: 0;
+  padding: 0;
+}
+
+/*Etiquetas alérgenos*/
 .tags {
   display: grid;
   grid-template-columns: repeat(2, 50%);
@@ -124,16 +153,7 @@ h1 {
   box-shadow: 1px 1px 3px rgb(177 176 176);
 }
 
-.product-card {
-  margin: 0;
-  padding: 0;
-}
-
-header {
-  height: 4em;
-  background-color: pink;
-}
-
+/*Sección envíos y carrito*/
 .cart {
   background-color: pink;
   width: 15vw;
@@ -191,6 +211,8 @@ header {
   color: #a73752;
 }
 
+
+/*Sección descripción larga producto*/
 .text {
   margin-top: 0;
   padding: 0;
@@ -199,9 +221,10 @@ header {
   font-size: 20px;
   color: #a73752;
   margin-left: 50px;
-  font-family: ShantellSans; 
+  font-family: ShantellSans;
 }
 
+/*Sección de ingredientes*/
 .ingredients {
   display: flex;
   flex-direction: row;
@@ -222,12 +245,13 @@ header {
 }
 
 h4 {
-  font-size: 20px;
+  font-size: 25px;
   padding: 50px;
   color: #fb8c81;
   font-family: IndieFlower;
 }
 
+/*Lista ingredientes*/
 .info > ul {
   list-style: none;
   text-align: left;
