@@ -65,6 +65,10 @@ button:hover {
   font-size: 20px;
   padding: 60px;
 }
+
+main{
+  background: linear-gradient(white, #f8796e  white );
+}
 h1 {
   font-family: "Indie Flower", cursive;
 }
