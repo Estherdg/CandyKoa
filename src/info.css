@@ -67,6 +67,26 @@ header {
   margin: 0.5vw;
 }
 
+.container {
+  width: 100vw;
+  height: auto;
+  font-family: "Indie Flower", cursive;
+  font-size: large;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container h1 {
+  color: #fb8d98;
+}
+
+.text {
+  width: 35vw;
+  text-align: justify;
+}
+
 /* Footer-Logo y Redes */
 footer {
   background-color: #ffdada;
