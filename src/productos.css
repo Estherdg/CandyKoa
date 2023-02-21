@@ -16,18 +16,55 @@
     url("IndieFlower-Regular.ttf") format("truetype");
 }
 
-nav {
+.header {
+  background-color: #ffdada;
+  width: 100vw;
+  height: 6vw;
+  display: flex;
+  align-items: center;
+  margin-inline: 2vw;
+}
+
+/* Menu */
+.desplegable button {
+  background-color: #ffdada;
+  color: #fb8d98;
+  border: none;
+  font-size: 1.8vw;
+  margin: 0 2vw;
+  font-family: IndieFlower;
+}
+
+/* Info web */
+.info a {
+  text-decoration: none;
+  color: #fb8d98;
+  font-size: 1.8vw;
+}
+
+/* Carrito compra */
+.carrito {
+  width: 70vw;
+  height: 3vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.carrito img {
+  width: 2vw;
   height: 2vw;
+  margin: 1vw;
 }
 
 .migasdepan {
   list-style: none;
+  margin-left: 1.5vw;
 }
 
 ul.migasdepan {
   padding: 10px 16px;
   list-style: none;
-  background-color: #e5f1f5;
 }
 
 ul.migasdepan li {
@@ -57,6 +94,9 @@ ul.migasdepan li a:hover {
 
 body {
   background-color: #e5f1f5;
+
+  /* background: linear-gradient(#e0ddde65, #e0ddde6c), url("../public/chuches.jpeg");
+  background-size: cover; */
   margin: 0 auto;
   padding: 0 auto;
   display: flex;
@@ -79,17 +119,18 @@ body {
   padding: 0;
 }
 
-.logo {
+.logo img {
+  width: 15vw;
+  height: 15vw;
   display: flex;
   align-items: center;
-  margin-bottom: 50px;
 }
 
 .flags {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 5vw;
 }
 
 #japanflag2 {
@@ -105,9 +146,9 @@ body {
 
 h1 {
   color: #fff;
-  font-size: 3em;
+  font-size: 3dvw;
   text-shadow: 4px 4px 10px #a73752;
-  font-family: "Indie Flower", cursive;
+  font-family: IndieFlower;
   letter-spacing: 4px;
 }
 
@@ -115,8 +156,10 @@ h1 {
   background-color: #edd8dd;
   width: 70%;
   height: 100%;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+
+  /* border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px; */
+  border-radius: 20px;
   margin-bottom: 20px;
   display: grid;
   grid-template-columns: repeat(3, 15vw);
@@ -125,10 +168,10 @@ h1 {
   /* grid-template-rows: repeat(3, 20vh); */
   justify-content: center;
   align-items: center;
-  column-gap: 8em;
-  row-gap: 12em;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  column-gap: 6em;
+  row-gap: 6em;
+  padding-top: 4%;
+  padding-bottom: 4%;
 }
 
 .p {
@@ -141,6 +184,7 @@ h1 {
   border-radius: 7%;
   box-shadow: 8px 8px 10px #a7a09f;
   transition: transform 0.2s;
+  white-space: nowrap;
 }
 
 .p:hover {
@@ -221,24 +265,25 @@ h1 {
 
 .prices {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  font-family: ShantellSans;
   text-align: left;
+  font-size: 0.7em;
+  justify-content: space-between;
+}
+
+.texts {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   margin-left: 20px;
   line-height: 1px;
-  font-family: "Shantell Sans", cursive;
+  font-family: ShantellSans;
   font-size: 0.8em;
 }
 
-h2 {
-  margin-top: 1em;
-  padding: 0;
-  margin-bottom: 0 auto;
-}
-
 h3 {
-  padding: 0;
   color: #ff8692;
-  margin-top: 0 auto;
 }
 
 .link {
