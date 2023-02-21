@@ -1,0 +1,118 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
+@font-face {
+  font-family: ShantellSans;
+  src:
+    local("ShantellSans"),
+    url("ShantellSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: IndieFlower;
+  src:
+    local("IndieFlower"),
+    url("IndieFlower-Regular.ttf") format("truetype");
+}
+
+body {
+  margin: 0% auto;
+  background: linear-gradient(175deg, #e5f1f5 20px, #f7e1c4);
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  font-family: ShantellSans;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text {
+  width: 100vw;
+  height: 28.3vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #e5f1f5;
+}
+
+h2 {
+  background-color: #f9adb5;
+  padding: 0.5vw;
+  border-radius: 5px;
+  margin: 0%;
+}
+
+p {
+  color: #a73752;
+  font-size: 2dvw;
+  line-height: 8vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+a {
+  padding: 0.2vw;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #f07c97;
+  font-size: 2dvw;
+}
+
+a:hover {
+  background-color: #fb8d98;
+  text-decoration: underline;
+  color: #e5f1f5;
+}
+
+/*
+a73752 - oscuro
+  background-color: #e5f1f5;
+  f7e1c4 - amarillo
+edd8dd
+fb8d98
+*/
+
+/* Footer-Logo y Redes */
+footer {
+  background-color: #ffdada;
+  width: 100vw;
+  height: 6vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Footer-Logo */
+.logo-name {
+  width: 65vw;
+  height: 6vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.logo-name img {
+  width: 10vw;
+  height: 3vw;
+}
+
+/* Footer-Redes sociales */
+.social-networks {
+  width: 50vw;
+  height: 3vw;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social-networks img {
+  width: 2vw;
+  height: 2vw;
+  margin: 1vw;
+}

@@ -17,6 +17,8 @@
 }
 
 body {
+  width: 100vw;
+  height: 100vh;
   margin: 0%;
   background-color: #fff6fa;
 }
@@ -25,7 +27,7 @@ header {
   background-color: #ffdada;
   width: 100vw;
   height: 6vw;
-  font-family: "Indie Flower", cursive;
+  font-family: IndieFlower;
 }
 
 .header {
@@ -43,7 +45,7 @@ header {
   border: none;
   font-size: 1.8dvw;
   margin: 2vw;
-  font-family: "Indie Flower", cursive;
+  font-family: IndieFlower;
 }
 
 /* Info web */
@@ -67,11 +69,12 @@ header {
   margin: 0.5vw;
 }
 
+/* Información de la web */
 .container {
   width: 100vw;
-  height: auto;
-  font-family: "Indie Flower", cursive;
-  font-size: large;
+  height: 90vh;
+  font-family: IndieFlower;
+  font-size: 1.2dvw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -83,8 +86,21 @@ header {
 }
 
 .text {
-  width: 35vw;
+  width: 50vw;
   text-align: justify;
+  justify-content: center;
+}
+
+/* Equipo Corporativo - linkedin */
+.team {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.team img {
+  width: 18vw;
+  height: 18vw;
 }
 
 /* Footer-Logo y Redes */

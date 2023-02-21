@@ -1,0 +1,283 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
+@font-face {
+  font-family: ShantellSans;
+  src:
+    local("ShantellSans"),
+    url("ShantellSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: IndieFlower;
+  src:
+    local("IndieFlower"),
+    url("IndieFlower-Regular.ttf") format("truetype");
+}
+
+body {
+  width: 100vw;
+  background-color: #edd8dd;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.migasdepan {
+  list-style: none;
+}
+
+ul.migasdepan {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: #edd8dd;
+}
+
+ul.migasdepan li {
+  display: inline;
+  font-size: 18px;
+}
+
+ul.migasdepan li + li::before {
+  padding: 8px;
+  color: #a73752;
+  content: "/";
+}
+
+ul.migasdepan li a {
+  color: #a73752;
+  text-decoration: none;
+}
+
+ul.migasdepan li a:hover {
+  color: #fb8d98;
+  text-decoration: underline;
+}
+
+.lastline {
+  color: #fb8d98;
+}
+
+.container {
+  display: flex;
+  align-items: left;
+  margin: 0 0 10em 10em;
+  padding: 0;
+  flex-direction: column;
+  width: 100vw;
+  row-gap: 2em;
+}
+
+.foto {
+  background-image: url("candy1.jpg");
+  width: 20vw;
+  height: 30vh;
+  background-size: cover;
+  margin: 10px;
+  padding: 0;
+  border-radius: 20px;
+  box-shadow: 2px 2px 10px rgb(206 201 201);
+}
+
+h1 {
+  margin: 20px;
+  padding: 0;
+  font-size: 2em;
+  color: #a73752;
+  font-family: "Indie Flower", cursive;
+}
+
+.product {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 2.8em;
+  gap: 4em;
+  background-color: #f2b1ab;
+  width: 60vw;
+  border-radius: 20px;
+  font-family: "Shantell Sans", cursive;
+}
+
+.top-container {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 5em;
+}
+
+.tags {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  margin: 0;
+  padding: 0;
+  column-gap: 10%;
+  row-gap: 20%;
+  font-size: 16px;
+  color: #a73752;
+}
+
+.tags > span {
+  background-color: #e5f1f5;
+  text-align: center;
+  border-radius: 10%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  box-shadow: 1px 1px 3px rgb(177 176 176);
+}
+
+.product-card {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 4em;
+  background-color: pink;
+}
+
+.cart {
+  background-color: pink;
+  width: 15vw;
+  height: 37vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  transform: translate(0, 2.5em);
+  border-radius: 10%;
+  gap: 2em;
+  border-style: solid;
+  border-color: #a73752;
+  border-width: thin;
+  font-family: "Shantell Sans", cursive;
+}
+
+.cart-container {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 50%;
+  margin-left: 2em;
+  gap: 2em;
+}
+
+.envios {
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.precio {
+  font-size: 40px;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+.ir {
+  font-size: 45px;
+  font-size: 20px;
+  margin: 0;
+  padding: 0.5em;
+  border-radius: 11%;
+  background-color: #a73752;
+  align-self: center;
+  color: #eefaef;
+  text-decoration: none;
+}
+
+.ir:hover {
+  background-color: #fb8d98;
+  color: #a73752;
+}
+
+.text {
+  margin-top: 0;
+  padding: 0;
+  width: 55%;
+  text-align: justify;
+  font-size: 20px;
+  color: #a73752;
+  margin-left: 50px;
+  font-family: "Shantell Sans", cursive;
+}
+
+.ingredients {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  color: #a73752;
+  font-size: 18px;
+  line-height: 40px;
+  background-color: #eefaef;
+  padding: 20px;
+  width: 40%;
+  margin-left: 160px;
+  border-radius: 20px;
+  font-family: "Shantell Sans", cursive;
+}
+
+.oneliner {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 20px;
+  padding: 50px;
+  color: #fb8c81;
+  font-family: "Indie Flower", cursive;
+}
+
+.info > ul {
+  list-style: none;
+  text-align: left;
+  margin: 0;
+  margin-left: 10px;
+  color: #a73752;
+}
+
+.info > ul > li {
+  margin-top: 2em;
+}
+
+/* Footer-Logo y Redes */
+footer {
+  background-color: #ffdada;
+  width: 100vw;
+  height: 6vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Footer-Logo */
+.logo-name {
+  width: 65vw;
+  height: 6vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.logo-name img {
+  width: 10vw;
+  height: 3vw;
+}
+
+/* Footer-Redes sociales */
+.social-networks {
+  width: 50vw;
+  height: 3vw;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social-networks img {
+  width: 2vw;
+  height: 2vw;
+  margin: 1vw;
+}

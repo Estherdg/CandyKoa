@@ -25,7 +25,7 @@ header {
   background-color: #ffdada;
   width: 100vw;
   height: 6vw;
-  font-family: "Indie Flower", cursive;
+  font-family: IndieFlower;
 }
 
 .header {
@@ -43,7 +43,7 @@ header {
   border: none;
   font-size: 1.8vw;
   margin: 0 2vw;
-  font-family: "Indie Flower", cursive;
+  font-family: IndieFlower;
 }
 
 /* Info web */
@@ -99,7 +99,7 @@ header {
 
 .text h1 {
   color: #a73752;
-  font-family: "Indie Flower", cursive;
+  font-family: ShantellSans;
   font-size: 2dvw;
   padding-right: 6vw;
   text-align: center;
@@ -146,7 +146,7 @@ header {
 
 .text2 p {
   color: #ffdada;
-  font-family: "Indie Flower", cursive;
+  font-family: ShantellSans;
   font-size: 1.2dvw;
 }
 
@@ -208,7 +208,7 @@ header {
 .topventas p {
   color: #fb8d98;
   font-size: 2dvw;
-  font-family: "Indie Flower", cursive;
+  font-family: ShantellSans;
   text-align: center;
 }
 
@@ -227,7 +227,7 @@ header {
   width: 12vw;
   height: 20vw;
   border-radius: 1vw;
-  font-family: "Indie Flower", cursive;
+  font-family: IndieFlower;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
