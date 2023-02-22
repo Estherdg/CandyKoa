@@ -83,6 +83,7 @@ h2 {
 .bandera {
   width: 220px;
   height: 150px;
+  border-radius: 5%;
 }
 
 #titulo {
@@ -97,6 +98,10 @@ h2 {
 p {
   font-family: "Shantell Sans", cursive;
 }
+.bandera:hover {
+  transform: scale(1.5); 
+}
+
 
 #world {
   width: 40px;
