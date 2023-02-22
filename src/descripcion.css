@@ -16,59 +16,59 @@
     url("IndieFlower-Regular.ttf") format("truetype");
 }
 
-/*Menú*/
+/* Menú */
 header {
-  height: 4em;
-  background-color: pink;
+  height: 5vh;
+  background: linear-gradient(to right, #cb87dab0, #84d7d1a7);
 }
 
-/*Características generales del body*/
+/* Características generales del body */
 body {
   width: 100vw;
-  background-color: #edd8dd;
+  background-color: #ffffff;
   margin: 0;
   padding: 0;
   justify-content: center;
   align-items: center;
 }
 
-/*Migas de pan*/
+/* Migas de pan */
 .migasdepan {
   list-style: none;
 }
 
 ul.migasdepan {
-  padding: 5px 16px;
+  padding: 0.4vw 2vw;
   list-style: none;
-  background-color: #edd8dd;
+  background-color: #ffffff;
 }
 
 ul.migasdepan li {
   display: inline;
-  font-size: 18px;
+  font-size: 1.1dvw;
 }
 
 ul.migasdepan li + li::before {
-  padding: 8px;
-  color: #a73752;
+  padding: 0.8vw;
+  color: #813B90;
   content: "/";
 }
 
 ul.migasdepan li a {
-  color: #a73752;
+  color: #813B90;
   text-decoration: none;
 }
 
 ul.migasdepan li a:hover {
-  color: #fb8d98;
+  color: #CB87DA;
   text-decoration: underline;
 }
 
 .lastline {
-  color: #fb8d98;
+  color: #CB87DA;
 }
 
-/*Container descripción de productos+sección de envios y carrito*/
+/* Container descripción de productos+sección de envios y carrito */
 .container {
   display: flex;
   align-items: left;
@@ -76,63 +76,66 @@ ul.migasdepan li a:hover {
   padding: 0;
   flex-direction: column;
   width: 100vw;
+  gap: 3vw;
 }
 
-
-/*Contenedor con foto+nombre+etiquetas*/
+/* Contenedor con foto+nombre+etiquetas */
 .top-container {
   display: flex;
   margin: 0;
   padding: 0;
-  gap: 6em;
+  gap: 8vw;
 }
 
-/*Hijo de top-container, con foto, título y etiquetas*/
+/* Hijo de top-container, con foto, título y etiquetas */
 .product {
   display: flex;
   flex-direction: row;
-  margin-top: 1.5em;
-  /*background-color: #f2b1ab;*/
+  margin-top: 2vw;
+  /* background-color: #f2b1ab; */
   width: 60vw;
-  border-radius: 20px;
   font-family: "Shantell Sans", cursive;
+  gap: 2vw;
 }
 
-/*Espacio para  colocar la foto*/
+/* Espacio para  colocar la foto */
 .photo {
   /*background-image: url("candy1.jpg");*/
   display: flex;
   justify-content: center;
-  width: 20vw;
-  height: 25vh;
-  /*background-size: cover;*/
+  align-items: center;
+  width: 18vw;
+  height: 30vh;
+  margin-left: 3vw;
+  margin-top: 1vw;
+  /* background-size: cover; */
 }
 
-/*Características y modificación de la foto*/
+/* Características y modificación de la foto */
 #photodetails {
-border-radius: 20px;
-width: 200px;
-margin: 0;
-box-shadow: 2px 2px 10px rgb(206 201 201);
-border: 6px solid #fb8c81;
-overflow: hidden;
-transition: transform .2s;
+  border-radius: 20px;
+  width: 200vw;
+  margin: 0;
+  box-shadow: 2px 2px 10px rgb(206 201 201);
+  border: 0.5vw solid #3AA59D;
+  overflow: hidden;
+  transition: transform .2s;
 }
 
 #photodetails:hover {
-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
-/*Título producto*/
+/* Título producto */
 h1 {
   padding: 0;
-  font-size: 1.5em;
-  color: #a73752;
+  font-size: 2dvw;
+  color: #813B90;
   font-family: IndieFlower;
 
 }
 
-/*Nombre + precio + etiquetas del producto*/
+/* Nombre + precio + etiquetas del producto */
 .product-card {
   padding: 0;
   margin: 0;
@@ -140,7 +143,8 @@ h1 {
 
 /*Precio y unidades*/
 .oneliner {
-  font-size: 0.9em;
+  font-size: 1.3dvw;
+  color: #9C67A8;
 }
 
 /*Etiquetas alérgenos*/
@@ -151,12 +155,12 @@ h1 {
   padding: 0;
   column-gap: 10%;
   row-gap: 20%;
-  font-size: 0.8em;
-  color: #a73752;
+  font-size: 1dvw;
+  color: #813B90;
 }
 
 .tags > span {
-  background-color: #e5f1f5;
+  background-color: #c0f2efb2;
   text-align: center;
   border-radius: 10%;
   padding-top: 4%;
@@ -164,9 +168,11 @@ h1 {
   box-shadow: 1px 1px 3px rgb(177 176 176);
 }
 
+
 /*Sección envíos y carrito*/
+/*
 .cart {
-  background-color: pink;
+  background-color: #F5C6FF;
   width: 15vw;
   height: 37vh;
   display: flex;
@@ -174,9 +180,9 @@ h1 {
   justify-content: flex-end;
   transform: translate(0, 2.5em);
   border-radius: 10%;
-  gap: 2em;
+  gap: 2vw;
   border-style: solid;
-  border-color: #a73752;
+  border-color: #813B90;
   border-width: thin;
   font-family: "Shantell Sans", cursive;
 }
@@ -185,49 +191,49 @@ h1 {
   padding: 0;
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 100%;
   height: 50%;
-  margin-left: 2em;
-  gap: 2em;
+  gap: 3vw;
 }
 
 .envios {
-  font-size: 20px;
+  font-size: 1.3dvw;
   margin: 0;
   padding: 0;
+  color: #813B90
 }
 
 .precio {
-  font-size: 40px;
-  font-size: 20px;
+  font-size:1.3dvw;
   margin: 0;
   padding: 0;
   font-weight: bold;
+  color: #813B90
 }
 
 .ir {
-  font-size: 45px;
-  font-size: 20px;
+  font-size: 1.2dvw;
   margin: 0;
-  padding: 0.5em;
+  padding: 0.6vw;
   border-radius: 11%;
-  background-color: #a73752;
+  background-color: #3AA59D;
   align-self: center;
-  color: #eefaef;
+  color: #ffffff;
   text-decoration: none;
 }
 
 .ir:hover {
-  background-color: #fb8d98;
-  color: #a73752;
+  background-color: #C0F2EF;
+  color: #3AA59D;
 }
-
+*/
 
 /*Sección descripción larga producto*/
 .info {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 4vw;
 }
 
 /*Descripción*/
@@ -236,8 +242,8 @@ h1 {
   padding: 0;
   width: 55%;
   text-align: justify;
-  font-size: 1.1em;
-  color: #a73752;
+  font-size: 1.3dvw;
+  color: #813B90;
   margin-left: 50px;
   font-family: "Shantell Sans", cursive;
 }
@@ -246,24 +252,26 @@ h1 {
 .ingredients {
   display: flex;
   flex-direction: row;
-  gap: 20px;
-  color: #a73752;
-  font-size: 1em;
-  line-height: 40px;
-  background-color: #eefaef;
-  padding: 10px;
+  color: #9C67A8;
+  font-size: 1dvw;
+  line-height: 3.5vw;
+  background-color: #c0f2efa3;
+  padding: 1vw;
   width: 40%;
-  margin-left: 160px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10vw;
   border-radius: 20px;
   font-family: ShantellSans;
   box-shadow: 0.5px 0.5px 5px grey;
+  gap: 3vw;
 }
 
 
 h4 {
-  font-size: 1.2em;
-  padding: 50px;
-  color: #fb8c81;
+  font-size: 1.3dvw;
+  padding: 1vw;
+  color: #3AA59D;
   font-family: "Indie Flower", cursive;
 }
 
@@ -272,19 +280,14 @@ h4 {
   list-style: none;
   text-align: left;
   margin: 0;
-  margin-left: 10px;
   color: #a73752;
-}
-
-.info > ul > li {
-  margin-top: 2em;
 }
 
 /* Footer-Logo y Redes */
 footer {
-  background-color: #ffdada;
+  background: linear-gradient(to right, #cb87dab0, #84d7d1a7);
   width: 100vw;
-  height: 6vw;
+  height: 4vh;
   display: flex;
   align-items: center;
   justify-content: center;
