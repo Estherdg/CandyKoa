@@ -15,17 +15,15 @@
 
 /* Menú */
 header {
-  height: 4em;
-  background-color: pink;
+  height: 3vw;
+  background-color: #F23D4C;
 }
 
 /* Características generales del body */
 body {
-  background-color: #edd8dd;
+  background-color: #ffffff;
   margin: 0;
   padding: 0;
-  justify-content: center;
-  align-items: center;
 }
 
 /* Migas de pan */
@@ -36,7 +34,6 @@ body {
 ul.migasdepan {
   padding: 5px 16px;
   list-style: none;
-  background-color: #edd8dd;
 }
 
 ul.migasdepan li {
@@ -46,53 +43,59 @@ ul.migasdepan li {
 
 ul.migasdepan li + li::before {
   padding: 8px;
-  color: #a73752;
+  color: #73020C;
   content: "/";
 }
 
 ul.migasdepan li a {
-  color: #a73752;
+  color: #73020C;
   text-decoration: none;
 }
 
 ul.migasdepan li a:hover {
-  color: #fb8d98;
+  color: #F2798F;
   text-decoration: underline;
 }
 
 .lastline {
-  color: #fb8d98;
+  color: #F23D4C;
 }
 
 /* Container descripción de productos+sección de envios y carrito */
 .container {
   display: flex;
-  align-items: left;
-
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3vw;
   /* margin: 0 0 10em 10em; */
   padding: 0;
-  flex-direction: column;
   width: 100vw;
 }
 
 /* Contenedor con foto+nombre+etiquetas */
 .top-container {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   margin: 0;
   padding: 0;
-  gap: 6em;
+  width: auto;
+
 }
 
 /* Hijo de top-container, con foto, título y etiquetas */
 .product {
-  display: flex;
-  flex-direction: row;
   margin-top: 1.5em;
-
   /* background-color: #f2b1ab; */
-  width: 60vw;
+  width: 70vw;
   border-radius: 20px;
   font-family: ShantellSans;
+  display: flex;
+  flex-direction: row;
+  gap: 5vw;
+
 }
 
 /* Espacio para  colocar la foto */
@@ -100,8 +103,8 @@ ul.migasdepan li a:hover {
   /* background-image: url("candy1.jpg"); */
   display: flex;
   justify-content: center;
-  width: 20vw;
-  height: 25vh;
+  width: 40vw;
+  height: 40vh;
 
   /* background-size: cover; */
 }
@@ -109,10 +112,10 @@ ul.migasdepan li a:hover {
 /* Características y modificación de la foto */
 #photodetails {
   border-radius: 20px;
-  width: 200px;
   margin: 0;
+  padding: 0;
   box-shadow: 2px 2px 10px rgb(206 201 201);
-  border: 6px solid #fb8c81;
+  border: 4px solid #73020C;
   overflow: hidden;
   transition: transform 0.2s;
 }
@@ -124,20 +127,23 @@ ul.migasdepan li a:hover {
 /* Título producto */
 h1 {
   padding: 0;
-  font-size: 1.5em;
-  color: #a73752;
+  font-size: 2.5em;
+  color: #73020C;
   font-family: IndieFlower;
+  margin: 0;
 }
 
 /* Nombre + precio + etiquetas del producto */
 .product-card {
-  padding: 0;
-  margin: 0;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Precio y unidades */
 .oneliner {
-  font-size: 0.9em;
+  font-size: 1vw;
+  margin-bottom: 2vh;
 }
 
 /* Etiquetas alérgenos */
@@ -146,14 +152,14 @@ h1 {
   grid-template-columns: repeat(2, 50%);
   margin: 0;
   padding: 0;
-  column-gap: 10%;
-  row-gap: 20%;
-  font-size: 0.8em;
-  color: #a73752;
+  font-size: 0.9vw;
+  width: 20vw;
+  color: #73020C;
+  gap: 0.5vw;
 }
 
 .tags > span {
-  background-color: #e5f1f5;
+  background-color: #F2798F;
   text-align: center;
   border-radius: 10%;
   padding-top: 4%;
@@ -171,7 +177,6 @@ h1 {
   justify-content: flex-end;
   transform: translate(0, 2.5em);
   border-radius: 10%;
-  gap: 2em;
   border-style: solid;
   border-color: #a73752;
   border-width: thin;
@@ -219,23 +224,14 @@ h1 {
   color: #a73752;
 }
 
-/* Sección descripción larga producto */
-.info {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-
 /* Descripción */
 .text {
-  margin-top: 0;
+  margin-top: 1.5vw;
   padding: 0;
-  width: 55%;
   text-align: justify;
   font-size: 1.1em;
-  color: #a73752;
-  margin-left: 50px;
   font-family: ShantellSans;
+
 }
 
 /* Sección de ingredientes */
@@ -243,34 +239,61 @@ h1 {
   display: flex;
   flex-direction: row;
   gap: 20px;
-  color: #a73752;
   font-size: 1em;
   line-height: 40px;
-  background-color: #eefaef;
-  padding: 10px;
-  width: 40%;
-  margin-left: 160px;
+  background-color: #f2798f76;
+  padding: 0.5vw;
+  width: 30vw;
   border-radius: 20px;
   font-family: ShantellSans;
   box-shadow: 0.5px 0.5px 5px grey;
+  margin-bottom: 6vh;
+  color:#73020C;
 }
 
 h4 {
   font-size: 1.2em;
-  padding: 50px;
-  color: #fb8c81;
+  padding: 1.5vw;
+  margin: 0;
+  color: #F23D4C;
   font-family: IndieFlower;
 }
 
 /* Lista ingredientes */
 .info > ul {
   list-style: none;
-  text-align: left;
+  text-align: center;
   margin: 0;
-  margin-left: 10px;
-  color: #a73752;
 }
 
-.info > ul > li {
-  margin-top: 2em;
+/*
+.networks {
+display: flex;
+flex-direction: row;
+margin: 3vw;
 }
+
+#joinus {
+  width: 40vw;
+  height: 60vh;
+}
+
+.background {
+background: linear-gradient(to right, #ed8c86, rgba(255, 0, 0, 0.444));
+width: 70vw;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+
+#koajapan {
+width: 15vw;
+}
+
+.letters {
+  color: white;
+  font-size: 3dvw;
+  text-shadow: 1px 1px 6px grey;
+}
+*/
