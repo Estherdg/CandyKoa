@@ -16,8 +16,15 @@
     url("IndieFlower-Regular.ttf") format("truetype");
 }
 
+
+header {
+  background-color: #f23d4c;
+  width: 100vw;
+  height: 6vw;
+  font-family: ShantellSans;
+}
+
 .header {
-  background-color: #ffdada;
   width: 100vw;
   height: 6vw;
   display: flex;
@@ -26,85 +33,94 @@
 }
 
 /* Menu */
-.desplegable button {
-  background-color: #ffdada;
-  color: #fb8d98;
+.desplegable {
+  background-color: #f23d4c;
+  color: #fff;
+  border: none;
+  font-size: 1.8vw;
+  margin: 0;
+}
+
+.btn-secondary {
+  background-color: #f23d4c;
+  color: #fefefe;
   border: none;
   font-size: 1.8vw;
   margin: 0 2vw;
-  font-family: IndieFlower;
+}
+
+.dropdown-menu {
+  background-color: #f23d4c;
+  border-color: #fff;
+  text-decoration: none;
+}
+
+.dropdown-menu a {
+  text-decoration: none;
+}
+
+.dropdown-item {
+  text-decoration: none;
+  color: #fff;
 }
 
 /* Info web */
 .info a {
   text-decoration: none;
-  color: #fb8d98;
+  color: #fff;
   font-size: 1.8vw;
 }
 
-/* Carrito compra */
-.carrito {
-  width: 70vw;
-  height: 3vw;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
 
-.carrito img {
-  width: 2vw;
-  height: 2vw;
-  margin: 1vw;
-}
-
+/* Migas de pan */
 .migasdepan {
   list-style: none;
-  margin-left: 1.5vw;
+  font-family: ShantellSans;
 }
 
 ul.migasdepan {
-  padding: 10px 16px;
+  padding: 0.4vw 2vw;
   list-style: none;
+  background-color: #ffffff;
 }
 
 ul.migasdepan li {
   display: inline;
-  font-size: 18px;
+  font-size: 1.1vw;
 }
 
 ul.migasdepan li + li::before {
-  padding: 8px;
-  color: #a73752;
+  padding: 0.8vw;
+  color: #73020C;
   content: "/";
 }
 
 ul.migasdepan li a {
-  color: #a73752;
+  color: #73020C;
   text-decoration: none;
 }
 
 ul.migasdepan li a:hover {
-  color: #fb8d98;
+  color: #F2798F;
   text-decoration: underline;
 }
 
 .lastline {
-  color: #fb8d98;
+  color: #F23D4C;
 }
 
 body {
-  background-color: #e5f1f5;
-
-  /* background: linear-gradient(#e0ddde65, #e0ddde6c), url("../public/chuches.jpeg");
-  background-size: cover; */
-  margin: 0 auto;
-  padding: 0 auto;
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: auto;
+  background-color: #ffffff;
+  gap: 17vw;
 }
+
 
 .title {
   display: flex;
@@ -112,9 +128,7 @@ body {
   justify-content: space-between;
   width: 100vw;
   height: 30vh;
-  background: linear-gradient(180deg, #f2b1ab 60%, #fb8c81);
-
-  /* background: linear-gradient(#fb8d98 97%, #a73752 3%); */
+  background: linear-gradient(180deg, #F2798F 60%, #F23D4C);
   margin: 0;
   padding: 0;
 }
@@ -130,11 +144,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 5vw;
+  gap: 4vw;
 }
 
 #japanflag2 {
-  margin-right: 200px;
+  margin-right: 12vw;
 }
 
 .branch {
@@ -146,43 +160,37 @@ body {
 
 h1 {
   color: #fff;
-  font-size: 3dvw;
+  font-size: 3vw;
   text-shadow: 4px 4px 10px #a73752;
   font-family: IndieFlower;
   letter-spacing: 4px;
 }
 
 .container {
-  background-color: #edd8dd;
-  width: 70%;
-  height: 100%;
-
-  /* border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px; */
+  background-color: #bf0f1ecb;
+  width: 70vw;
+  height: auto;
   border-radius: 20px;
-  margin-bottom: 20px;
   display: grid;
   grid-template-columns: repeat(3, 15vw);
-  box-shadow: 1px 1px 10px #b7a9ac;
-
-  /* grid-template-rows: repeat(3, 20vh); */
   justify-content: center;
   align-items: center;
-  column-gap: 6em;
-  row-gap: 6em;
-  padding-top: 4%;
-  padding-bottom: 4%;
+  column-gap: 5vw;
+  row-gap: 5vh;
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+  margin: 0;
 }
 
 .p {
   text-align: center;
-  background-color: #f7e1c4;
-  margin: 5%;
+  background-color: #F2798F;
+  margin: 0.5vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   border-radius: 7%;
-  box-shadow: 8px 8px 10px #a7a09f;
+  box-shadow: 1px 1px 8px #494545;
   transition: transform 0.2s;
   white-space: nowrap;
 }
@@ -267,8 +275,8 @@ h1 {
   display: flex;
   flex-direction: row;
   font-family: ShantellSans;
+  font-size: 2em;
   text-align: left;
-  font-size: 0.7em;
   justify-content: space-between;
 }
 
@@ -279,26 +287,25 @@ h1 {
   margin-left: 20px;
   line-height: 1px;
   font-family: ShantellSans;
-  font-size: 0.8em;
+  font-size: 0.8vw;
 }
 
 h3 {
-  color: #ff8692;
+  color: #73020C;
+
 }
 
 .link {
   text-decoration: none;
-  color: #a73752;
+  color: #73020C;
 }
 
 /* Footer-Logo y Redes */
 footer {
-  background-color: #ffdada;
+  background-color: #f23d4c;
   width: 100vw;
   height: 6vw;
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 /* Footer-Logo */
@@ -312,15 +319,16 @@ footer {
 
 .logo-name img {
   width: 10vw;
-  height: 3vw;
+  height: 2vw;
 }
 
 /* Footer-Redes sociales */
 .social-networks {
   width: 50vw;
-  height: 3vw;
+  height: 6vw;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
 
 .social-networks img {
