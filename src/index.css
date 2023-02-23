@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ::-webkit-scrollbar {
   display: none;
 }
@@ -17,15 +18,15 @@
 }
 
 body {
-  margin: 0%;
-  background-color: #fff6fa;
+  margin: 0;
+  background-color: #fff;
+  font-family: ShantellSans;
 }
 
 header {
-  background-color: #ffdada;
+  background-color: #f23d4c;
   width: 100vw;
   height: 6vw;
-  font-family: IndieFlower;
 }
 
 .header {
@@ -37,19 +38,40 @@ header {
 }
 
 /* Menu */
-.desplegable button {
-  background-color: #ffdada;
-  color: #fb8d98;
+.desplegable {
+  background-color: #f23d4c;
+  color: #fff;
+  border: none;
+  font-size: 1.8vw;
+}
+
+.btn-secondary {
+  background-color: #f23d4c;
+  color: #fefefe;
   border: none;
   font-size: 1.8vw;
   margin: 0 2vw;
-  font-family: IndieFlower;
+}
+
+.dropdown-menu {
+  background-color: #f23d4c;
+  border-color: #fff;
+  text-decoration: none;
+}
+
+.dropdown-menu a {
+  text-decoration: none;
+}
+
+.dropdown-item {
+  text-decoration: none;
+  color: #fff;
 }
 
 /* Info web */
 .info a {
   text-decoration: none;
-  color: #fb8d98;
+  color: #fff;
   font-size: 1.8vw;
 }
 
@@ -71,18 +93,20 @@ header {
 /* Logo y frase */
 .logo-text {
   width: 100vw;
-  height: 10vw;
+  height: 20vw;
+  background-image: url("assets/productos/chuches.jpg");
+  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .logo {
-  width: 60vw;
+  width: 100vw;
   height: 12vw;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .logo img {
@@ -91,27 +115,26 @@ header {
 }
 
 .text {
-  width: 45vw;
-  height: 10vw;
+  width: 100vw;
+  height: 8vw;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
 }
 
 .text h1 {
-  color: #a73752;
-  font-family: ShantellSans;
+  color: #f23d4c;
   font-size: 2dvw;
-  padding-right: 6vw;
   text-align: center;
 }
 
-/* Carrousel de fotos */
+/* Carrousel de fotos
 .carroussel {
   width: 100vw;
   height: 20vw;
   background-image: url("assets/productos/chuches.jpg");
   background-size: cover;
-}
+} */
 
 /* Dulces por país */
 .candy-cartel {
@@ -124,7 +147,7 @@ header {
 }
 
 .candytext {
-  background-color: #a73752;
+  background-color: #bf0f1e;
   width: 20vw;
   height: 1vw;
   display: flex;
@@ -135,19 +158,19 @@ header {
 }
 
 .text2 {
-  background-color: #fb8d98;
+  background-color: #f2798f;
   width: 15vw;
   height: 3vw;
   display: flex;
   justify-content: center;
-  align-items: center;
   border-radius: 6px;
 }
 
 .text2 p {
-  color: #ffdada;
-  font-family: ShantellSans;
+  color: #fff;
   font-size: 1.2dvw;
+  text-align: center;
+  margin-top: 0.5vw;
 }
 
 /* Imágenes de los países */
@@ -159,11 +182,36 @@ header {
   justify-content: center;
 }
 
-.pais img {
+.pais {
   width: 20vw;
   height: 12vw;
   margin-inline: 2vw;
+  border: 2px solid #f2798f;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.japon {
+  width: 19.8vw;
+  height: 10vw;
+  border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
+}
+
+.eeuu {
+  width: 19.8vw;
+  height: 10vw;
+  border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
+}
+
+.mexico {
+  width: 19.8vw;
+  height: 10vw;
+  border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
 }
 
 /* Top ventas-Cartel con koala */
@@ -188,7 +236,7 @@ header {
 .ventas-cartel {
   width: 100vw;
   height: 3.6vw;
-  background-color: #fb8d98;
+  background-color: #bf0f1e;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -197,18 +245,16 @@ header {
 .topventas {
   width: 25vw;
   height: 3.5vw;
-  background-color: #ffdada;
+  background-color: #f2798f;
   border-radius: 10px;
   transform: translateY(20%);
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .topventas p {
-  color: #fb8d98;
+  color: #fff;
   font-size: 2dvw;
-  font-family: ShantellSans;
   text-align: center;
 }
 
@@ -223,11 +269,10 @@ header {
 }
 
 .tarjeta {
-  background-color: #a73752;
+  background-color: #f2798f;
   width: 12vw;
   height: 20vw;
   border-radius: 1vw;
-  font-family: IndieFlower;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -248,26 +293,25 @@ header {
 }
 
 .product a {
-  color: #ffdada;
+  color: #73020c;
   text-decoration: none;
+  margin-top: 1vw;
 }
 
 .precio {
   width: 100%;
   height: auto;
   font-size: 1.1dvw;
-  color: #ffdada;
-  margin-left: 1vw;
+  color: #73020c;
+  margin: 1vw;
 }
 
 /* Footer-Logo y Redes */
 footer {
-  background-color: #ffdada;
+  background-color: #f23d4c;
   width: 100vw;
   height: 6vw;
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 /* Footer-Logo */
@@ -287,9 +331,10 @@ footer {
 /* Footer-Redes sociales */
 .social-networks {
   width: 50vw;
-  height: 3vw;
+  height: 6vw;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
 
 .social-networks img {
@@ -297,3 +342,5 @@ footer {
   height: 2vw;
   margin: 1vw;
 }
+=======
+>>>>>>> Celia_Miriam
