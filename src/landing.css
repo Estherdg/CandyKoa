@@ -1,20 +1,23 @@
 body {
-  background: linear-gradient(180deg, #f8a79f 60%, #f8beb9, #f7e1c4);
+
   margin: 0%;
 }
 
 header {
+  background-image: url(assets/headerblue.jpg) ;
+  background-size: cover;
   display: flex;
-  background: linear-gradient(180deg, #f8beb9 60%, #f8796e);
+ 
   width: auto;
-  padding: 20px;
+  padding: 5px;
+  height:350px ;
   align-items: center;
   justify-content: center;
   gap: 80px;
 }
 
 header img {
-  height: 300px;
+  height: 450px;
 }
 
 header h1 {
@@ -37,7 +40,7 @@ button {
   font-size: 20px;
   font-family: "Indie Flower", cursive;
   font-weight: bold;
-  background-color: #ffc3be;
+  background-color: #fcc7c2;
   width: 150px;
   height: 50px;
   padding: 10px 20px;
@@ -67,7 +70,9 @@ button:hover {
 }
 
 main {
-  background: #e5f1f5;
+  background: linear-gradient(175deg, #ffffff 20%, #dbeaee  );
+   
+   
 }
 
 h1 {
@@ -104,7 +109,7 @@ p {
 }
 
 .bandera:hover {
-  transform: scale(1.5);
+  transform: scale(1.4);
 }
 
 #world {
@@ -112,6 +117,40 @@ p {
   height: 40px;
 }
 
+/* Footer-Logo y Redes */
 footer {
-  justify-content: baseline;
+  background-color: #f14857;
+  width: 100vw;
+  height: 6vw;
+  display: flex;
+}
+
+/* Footer-Logo */
+.logo-name {
+  width: 65vw;
+  height: 6vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.logo-name img {
+  width: 12vw;
+  height: 2,5vw;
+}
+
+/* Footer-Redes sociales */
+.social-networks {
+  width: 50vw;
+  height: 6vw;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.social-networks img {
+  width: 2vw;
+  height: 2vw;
+  margin: 1vw;
 }
