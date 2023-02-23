@@ -13,11 +13,6 @@
     url("IndieFlower-Regular.ttf") format("truetype");
 }
 
-/* Menú */
-header {
-  height: 3vw;
-  background-color: #F23D4C;
-}
 
 /* Características generales del body */
 body {
