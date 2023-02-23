@@ -1,7 +1,4 @@
-::-webkit-scrollbar {
-  display: none;
-}
-
+/* Fuentes de texto */
 @font-face {
   font-family: ShantellSans;
   src:
@@ -18,18 +15,15 @@
 
 /* Menú */
 header {
-  height: 5vh;
-  background: linear-gradient(to right, #cb87dab0, #84d7d1a7);
+  height: 3vw;
+  background-color: #F23D4C;
 }
 
 /* Características generales del body */
 body {
-  width: 100vw;
   background-color: #ffffff;
   margin: 0;
   padding: 0;
-  justify-content: center;
-  align-items: center;
 }
 
 /* Migas de pan */
@@ -38,88 +32,92 @@ body {
 }
 
 ul.migasdepan {
-  padding: 0.4vw 2vw;
+  padding: 5px 16px;
   list-style: none;
-  background-color: #ffffff;
 }
 
 ul.migasdepan li {
   display: inline;
-  font-size: 1.1dvw;
+  font-size: 18px;
 }
 
 ul.migasdepan li + li::before {
-  padding: 0.8vw;
-  color: #813B90;
+  padding: 8px;
+  color: #73020C;
   content: "/";
 }
 
 ul.migasdepan li a {
-  color: #813B90;
+  color: #73020C;
   text-decoration: none;
 }
 
 ul.migasdepan li a:hover {
-  color: #CB87DA;
+  color: #F2798F;
   text-decoration: underline;
 }
 
 .lastline {
-  color: #CB87DA;
+  color: #F23D4C;
 }
 
 /* Container descripción de productos+sección de envios y carrito */
 .container {
   display: flex;
-  align-items: left;
-  /*margin: 0 0 10em 10em;*/
-  padding: 0;
   flex-direction: column;
-  width: 100vw;
+  justify-content: center;
+  align-items: center;
   gap: 3vw;
+  /* margin: 0 0 10em 10em; */
+  padding: 0;
+  width: 100vw;
 }
 
 /* Contenedor con foto+nombre+etiquetas */
 .top-container {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   margin: 0;
   padding: 0;
-  gap: 8vw;
+  width: auto;
+
 }
 
 /* Hijo de top-container, con foto, título y etiquetas */
 .product {
+  margin-top: 1.5em;
+  /* background-color: #f2b1ab; */
+  width: 70vw;
+  border-radius: 20px;
+  font-family: ShantellSans;
   display: flex;
   flex-direction: row;
-  margin-top: 2vw;
-  /* background-color: #f2b1ab; */
-  width: 60vw;
-  font-family: "Shantell Sans", cursive;
-  gap: 2vw;
+  gap: 5vw;
+
 }
 
 /* Espacio para  colocar la foto */
 .photo {
-  /*background-image: url("candy1.jpg");*/
+  /* background-image: url("candy1.jpg"); */
   display: flex;
   justify-content: center;
-  align-items: center;
-  width: 18vw;
-  height: 30vh;
-  margin-left: 3vw;
-  margin-top: 1vw;
+  width: 40vw;
+  height: 40vh;
+
   /* background-size: cover; */
 }
 
 /* Características y modificación de la foto */
 #photodetails {
   border-radius: 20px;
-  width: 200vw;
   margin: 0;
+  padding: 0;
   box-shadow: 2px 2px 10px rgb(206 201 201);
-  border: 0.5vw solid #3AA59D;
+  border: 4px solid #73020C;
   overflow: hidden;
-  transition: transform .2s;
+  transition: transform 0.2s;
 }
 
 #photodetails:hover {
@@ -129,38 +127,39 @@ ul.migasdepan li a:hover {
 /* Título producto */
 h1 {
   padding: 0;
-  font-size: 2dvw;
-  color: #813B90;
+  font-size: 2.5em;
+  color: #73020C;
   font-family: IndieFlower;
-
+  margin: 0;
 }
 
 /* Nombre + precio + etiquetas del producto */
 .product-card {
-  padding: 0;
-  margin: 0;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
 }
 
-/*Precio y unidades*/
+/* Precio y unidades */
 .oneliner {
-  font-size: 1.3dvw;
-  color: #9C67A8;
+  font-size: 1vw;
+  margin-bottom: 2vh;
 }
 
-/*Etiquetas alérgenos*/
+/* Etiquetas alérgenos */
 .tags {
   display: grid;
   grid-template-columns: repeat(2, 50%);
   margin: 0;
   padding: 0;
-  column-gap: 10%;
-  row-gap: 20%;
-  font-size: 1dvw;
-  color: #813B90;
+  font-size: 0.9vw;
+  width: 20vw;
+  color: #73020C;
+  gap: 0.5vw;
 }
 
 .tags > span {
-  background-color: #c0f2efb2;
+  background-color: #F2798F;
   text-align: center;
   border-radius: 10%;
   padding-top: 4%;
@@ -168,11 +167,9 @@ h1 {
   box-shadow: 1px 1px 3px rgb(177 176 176);
 }
 
-
-/*Sección envíos y carrito*/
-/*
+/* Sección envíos y carrito */
 .cart {
-  background-color: #F5C6FF;
+  background-color: pink;
   width: 15vw;
   height: 37vh;
   display: flex;
@@ -180,143 +177,123 @@ h1 {
   justify-content: flex-end;
   transform: translate(0, 2.5em);
   border-radius: 10%;
-  gap: 2vw;
   border-style: solid;
-  border-color: #813B90;
+  border-color: #a73752;
   border-width: thin;
-  font-family: "Shantell Sans", cursive;
+  font-family: ShantellSans;
 }
 
 .cart-container {
   padding: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
   width: 100%;
   height: 50%;
-  gap: 3vw;
+  margin-left: 2em;
+  gap: 2em;
 }
 
 .envios {
-  font-size: 1.3dvw;
+  font-size: 20px;
   margin: 0;
   padding: 0;
-  color: #813B90
 }
 
 .precio {
-  font-size:1.3dvw;
+  font-size: 40px;
+  font-size: 20px;
   margin: 0;
   padding: 0;
   font-weight: bold;
-  color: #813B90
 }
 
 .ir {
-  font-size: 1.2dvw;
+  font-size: 45px;
+  font-size: 20px;
   margin: 0;
-  padding: 0.6vw;
+  padding: 0.5em;
   border-radius: 11%;
-  background-color: #3AA59D;
+  background-color: #a73752;
   align-self: center;
-  color: #ffffff;
+  color: #eefaef;
   text-decoration: none;
 }
 
 .ir:hover {
-  background-color: #C0F2EF;
-  color: #3AA59D;
-}
-*/
-
-/*Sección descripción larga producto*/
-.info {
-  display: flex;
-  flex-direction: column;
-  gap: 4vw;
-}
-
-/*Descripción*/
-.text {
-  margin-top: 0;
-  padding: 0;
-  width: 55%;
-  text-align: justify;
-  font-size: 1.3dvw;
-  color: #813B90;
-  margin-left: 50px;
-  font-family: "Shantell Sans", cursive;
-}
-
-/*Sección de ingredientes*/
-.ingredients {
-  display: flex;
-  flex-direction: row;
-  color: #9C67A8;
-  font-size: 1dvw;
-  line-height: 3.5vw;
-  background-color: #c0f2efa3;
-  padding: 1vw;
-  width: 40%;
-  justify-content: center;
-  align-items: center;
-  margin-left: 10vw;
-  border-radius: 20px;
-  font-family: ShantellSans;
-  box-shadow: 0.5px 0.5px 5px grey;
-  gap: 3vw;
-}
-
-
-h4 {
-  font-size: 1.3dvw;
-  padding: 1vw;
-  color: #3AA59D;
-  font-family: "Indie Flower", cursive;
-}
-
-/*Lista ingredientes*/
-.info > ul {
-  list-style: none;
-  text-align: left;
-  margin: 0;
+  background-color: #fb8d98;
   color: #a73752;
 }
 
-/* Footer-Logo y Redes */
-footer {
-  background: linear-gradient(to right, #cb87dab0, #84d7d1a7);
-  width: 100vw;
-  height: 4vh;
+/* Descripción */
+.text {
+  margin-top: 1.5vw;
+  padding: 0;
+  text-align: justify;
+  font-size: 1.1em;
+  font-family: ShantellSans;
+
+}
+
+/* Sección de ingredientes */
+.ingredients {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+  font-size: 1em;
+  line-height: 40px;
+  background-color: #f2798f76;
+  padding: 0.5vw;
+  width: 30vw;
+  border-radius: 20px;
+  font-family: ShantellSans;
+  box-shadow: 0.5px 0.5px 5px grey;
+  margin-bottom: 6vh;
+  color:#73020C;
 }
 
-/* Footer-Logo */
-.logo-name {
-  width: 65vw;
-  height: 6vw;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
+h4 {
+  font-size: 1.2em;
+  padding: 1.5vw;
+  margin: 0;
+  color: #F23D4C;
+  font-family: IndieFlower;
 }
 
-.logo-name img {
-  width: 10vw;
-  height: 3vw;
+/* Lista ingredientes */
+.info > ul {
+  list-style: none;
+  text-align: center;
+  margin: 0;
 }
 
-/* Footer-Redes sociales */
-.social-networks {
-  width: 50vw;
-  height: 3vw;
-  display: flex;
-  justify-content: flex-end;
+/*
+.networks {
+display: flex;
+flex-direction: row;
+margin: 3vw;
 }
 
-.social-networks img {
-  width: 2vw;
-  height: 2vw;
-  margin: 1vw;
+#joinus {
+  width: 40vw;
+  height: 60vh;
 }
+
+.background {
+background: linear-gradient(to right, #ed8c86, rgba(255, 0, 0, 0.444));
+width: 70vw;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+
+#koajapan {
+width: 15vw;
+}
+
+.letters {
+  color: white;
+  font-size: 3dvw;
+  text-shadow: 1px 1px 6px grey;
+}
+*/
