@@ -1,22 +1,20 @@
 body {
-
   margin: 0%;
 }
 
 header {
-  background-image: url(assets/headerblue.jpg) ;
+  background-image: url("assets/productos/chuches.jpg");
   background-size: cover;
   display: flex;
- 
   width: auto;
   padding: 5px;
-  height:350px ;
+  height: 350px;
   align-items: center;
   justify-content: center;
   gap: 80px;
 }
 
-header img {
+.koala-logo {
   height: 450px;
 }
 
@@ -57,6 +55,14 @@ button:hover {
   color: #fde2e2;
 }
 
+h1 {
+  font-family: "Indie Flower", cursive;
+}
+
+h2 {
+  font-family: "Shantell Sans", cursive;
+}
+
 .container {
   display: grid;
   grid-template-columns: repeat(4, 23vw);
@@ -70,17 +76,7 @@ button:hover {
 }
 
 main {
-  background: linear-gradient(175deg, #ffffff 20%, #dbeaee  );
-   
-   
-}
-
-h1 {
-  font-family: "Indie Flower", cursive;
-}
-
-h2 {
-  font-family: "Shantell Sans", cursive;
+  background: linear-gradient(175deg, #fff 20%, #dbeaee);
 }
 
 .paises {
@@ -105,6 +101,7 @@ h2 {
 }
 
 p {
+  color: black;
   font-family: "Shantell Sans", cursive;
 }
 
@@ -120,8 +117,8 @@ p {
 /* Footer-Logo y Redes */
 footer {
   background-color: #f14857;
-  width: 100vw;
-  height: 6vw;
+  width: auto;
+  height: auto;
   display: flex;
 }
 
@@ -136,7 +133,7 @@ footer {
 
 .logo-name img {
   width: 12vw;
-  height: 2,5vw;
+  height: 2, 5vw;
 }
 
 /* Footer-Redes sociales */
