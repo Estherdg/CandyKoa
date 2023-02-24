@@ -1,3 +1,7 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
 /* Fuentes de texto */
 @font-face {
   font-family: ShantellSans;
@@ -24,6 +28,7 @@ body {
 /* Migas de pan */
 .migasdepan {
   list-style: none;
+  font-family: ShantellSans;
 }
 
 ul.migasdepan {
@@ -259,6 +264,43 @@ h4 {
   list-style: none;
   text-align: center;
   margin: 0;
+}
+
+/* Footer-Logo y Redes */
+footer {
+  background-color: #f23d4c;
+  width: 100vw;
+  height: 6vw;
+  display: flex;
+}
+
+/* Footer-Logo */
+.logo-name {
+  width: 65vw;
+  height: 6vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.logo-name img {
+  width: 10vw;
+  height: 2vw;
+}
+
+/* Footer-Redes sociales */
+.social-networks {
+  width: 50vw;
+  height: 6vw;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.social-networks img {
+  width: 2vw;
+  height: 2vw;
+  margin: 1vw;
 }
 
 /*

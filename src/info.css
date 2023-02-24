@@ -90,6 +90,42 @@ header {
   margin: 0.5vw;
 }
 
+/* Migas de pan */
+.migasdepan {
+  list-style: none;
+  font-family: ShantellSans;
+}
+
+ul.migasdepan {
+  padding: 5px 16px;
+  list-style: none;
+}
+
+ul.migasdepan li {
+  display: inline;
+  font-size: 18px;
+}
+
+ul.migasdepan li + li::before {
+  padding: 8px;
+  color: #73020C;
+  content: "/";
+}
+
+ul.migasdepan li a {
+  color: #73020C;
+  text-decoration: none;
+}
+
+ul.migasdepan li a:hover {
+  color: #F2798F;
+  text-decoration: underline;
+}
+
+.lastline {
+  color: #F23D4C;
+}
+
 /* Información de la web */
 .container {
   width: 100vw;

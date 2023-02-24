@@ -18,7 +18,7 @@
 
 body {
   margin: 0% auto;
-  background: linear-gradient(175deg, #e5f1f5 20px, #f7e1c4);
+  background: linear-gradient(175deg, #F2F2F2 30px, #f2798f49);
   background-repeat: no-repeat;
   width: 100vw;
   height: 100vh;
@@ -37,18 +37,18 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #e5f1f5;
+  color: #ffffff;
 }
 
 h2 {
-  background-color: #f9adb5;
+  background-color: #F23D4C;
   padding: 0.5vw;
   border-radius: 5px;
   margin: 0%;
 }
 
 p {
-  color: #a73752;
+  color: #73020C;
   font-size: 2dvw;
   line-height: 8vw;
   display: flex;
@@ -61,27 +61,20 @@ a {
   padding: 0.2vw;
   border-radius: 6px;
   text-decoration: none;
-  color: #f07c97;
+  color: #F23D4C;
   font-size: 2dvw;
 }
-
 a:hover {
-  background-color: #fb8d98;
+  background-color: #BF0F1E;
   text-decoration: underline;
-  color: #e5f1f5;
+  color: #ffffff;
 }
 
-/*
-a73752 - oscuro
-  background-color: #e5f1f5;
-  f7e1c4 - amarillo
-edd8dd
-fb8d98
-*/
+
 
 /* Footer-Logo y Redes */
 footer {
-  background-color: #ffdada;
+  background-color: #F23D4C;
   width: 100vw;
   height: 6vw;
   display: flex;
