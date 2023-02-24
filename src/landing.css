@@ -1,9 +1,9 @@
 body {
-  margin: 0%;
+  margin: 0;
 }
 
 header {
-  background-image: url("assets/productos/chuches.jpg");
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.294), rgba(255, 255, 255, 0.306)), url("assets/productos/chuches.jpg");
   background-size: cover;
   display: flex;
   width: auto;
@@ -16,6 +16,7 @@ header {
 
 .koala-logo {
   height: 450px;
+  margin-top: 50px;
 }
 
 header h1 {
@@ -57,6 +58,8 @@ button:hover {
 
 h1 {
   font-family: "Indie Flower", cursive;
+  color: #73020C;
+  text-shadow: 1px 1px 5px white; 
 }
 
 h2 {
@@ -101,8 +104,9 @@ main {
 }
 
 p {
-  color: black;
+  color: #73020C;
   font-family: "Shantell Sans", cursive;
+  text-shadow: 1px 1px 5px white;
 }
 
 .bandera:hover {
