@@ -200,7 +200,7 @@ h1 {
 }
 
 .image1 {
-  background-image: url("candy1.jpg");
+  background-image: url("./assets/candy1.jpg");
   background-size: cover;
   height: 14em;
   border-top-right-radius: 7%;
@@ -208,7 +208,7 @@ h1 {
 }
 
 .image2 {
-  background-image: url("candy4.jpg");
+  background-image: url("./assets/candy4.jpg");
   background-size: cover;
   height: 14em;
   border-top-right-radius: 7%;
@@ -216,7 +216,7 @@ h1 {
 }
 
 .image3 {
-  background-image: url("chewchew.jpg");
+  background-image: url("./assets/chewchew.jpg");
   background-size: cover;
   height: 14em;
   border-top-right-radius: 7%;
@@ -224,7 +224,7 @@ h1 {
 }
 
 .image4 {
-  background-image: url("candy3.jpg");
+  background-image: url("./assets/candy3.jpg");
   background-size: cover;
   height: 14em;
   border-top-right-radius: 7%;
@@ -232,7 +232,7 @@ h1 {
 }
 
 .image5 {
-  background-image: url("kitkat.jpg");
+  background-image: url("./assets/kitkat.jpg");
   background-size: cover;
   height: 14em;
   border-top-right-radius: 7%;
@@ -240,7 +240,7 @@ h1 {
 }
 
 .image6 {
-  background-image: url("choc3.jpg");
+  background-image: url("./assets/choc3.jpg");
   background-size: cover;
   height: 14em;
   border-top-right-radius: 7%;
@@ -248,7 +248,7 @@ h1 {
 }
 
 .image7 {
-  background-image: url("candy2.jpg");
+  background-image: url("./assets/candy2.jpg");
   background-size: cover;
   height: 14em;
   border-top-right-radius: 7%;
@@ -256,7 +256,7 @@ h1 {
 }
 
 .image8 {
-  background-image: url("pez.jpg");
+  background-image: url("./assets/pez.jpg");
   background-size: cover;
   height: 14em;
   border-top-right-radius: 7%;
@@ -264,7 +264,7 @@ h1 {
 }
 
 .image9 {
-  background-image: url("choc.jpg");
+  background-image: url("./assets/choc.jpg");
   background-size: cover;
   height: 14em;
   border-top-right-radius: 7%;
